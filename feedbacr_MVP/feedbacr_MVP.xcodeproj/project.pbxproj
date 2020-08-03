@@ -14,6 +14,7 @@
 		4A58B38E24CF3C12008038A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38D24CF3C12008038A2 /* Assets.xcassets */; };
 		4A58B39124CF3C12008038A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38F24CF3C12008038A2 /* LaunchScreen.storyboard */; };
 		4A58B39C24CF3C12008038A2 /* feedbacr_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B39B24CF3C12008038A2 /* feedbacr_MVPTests.swift */; };
+		4A9DCB5A24D86C2D00042CFF /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCB5924D86C2D00042CFF /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		4A58B39724CF3C12008038A2 /* feedbacr_MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = feedbacr_MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A58B39B24CF3C12008038A2 /* feedbacr_MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbacr_MVPTests.swift; sourceTree = "<group>"; };
 		4A58B39D24CF3C12008038A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A9DCB5924D86C2D00042CFF /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				4A58B38424CF3C10008038A2 /* AppDelegate.swift */,
+				4A9DCB5924D86C2D00042CFF /* QuestionData.swift */,
 				4A58B38624CF3C10008038A2 /* SceneDelegate.swift */,
 				4A58B38824CF3C10008038A2 /* ViewController.swift */,
 				4A58B38A24CF3C10008038A2 /* Main.storyboard */,
@@ -144,7 +147,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Michael Brown";
 				TargetAttributes = {
 					4A58B38024CF3C10008038A2 = {
@@ -203,6 +206,7 @@
 				4A58B38924CF3C10008038A2 /* ViewController.swift in Sources */,
 				4A58B38524CF3C10008038A2 /* AppDelegate.swift in Sources */,
 				4A58B38724CF3C10008038A2 /* SceneDelegate.swift in Sources */,
+				4A9DCB5A24D86C2D00042CFF /* QuestionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +274,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -330,6 +335,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
