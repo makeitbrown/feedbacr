@@ -31,5 +31,5 @@ var questions: [Question] = [
     Question(questionText: "Did the interviewee answer the questions fully?", type: .single, responseAnswers: [ResponseAnswers(answerText: "Yes"), ResponseAnswers(answerText: "No"), ResponseAnswers(answerText: "Somewhat")]),
     Question(questionText: "Did they ask appropriate questions?", type: .single, responseAnswers: [ResponseAnswers(answerText: "Yes"), ResponseAnswers(answerText: "No"), ResponseAnswers(answerText: "Somewhat")]),
     Question(questionText: "Did the interviewee give thought provoking answers?", type: .single, responseAnswers: [ResponseAnswers(answerText: "Yes, when the question needed it."), ResponseAnswers(answerText: "No, not really.")]),
-    Question(questionText: "", type: <#T##ResponseType#>, responseAnswers: <#T##[ResponseAnswers]#>)
+    Question(questionText: "How was the demeanor/attitude of the interviewee during the interview?", type: .single, responseAnswers: [ResponseAnswers(answerText: "The interviewee was confident."), ResponseAnswers(answerText: "The interviewee seemed nervous."), ResponseAnswers(answerText: "The interviewee was distracted during the interview.")])
 ]
