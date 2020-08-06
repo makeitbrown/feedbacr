@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A23F68E24D9AEBB005C0B02 /* SurveyInviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23F68D24D9AEBB005C0B02 /* SurveyInviteViewController.swift */; };
+		4A23F69024D9AEDC005C0B02 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23F68F24D9AEDC005C0B02 /* SurveyViewController.swift */; };
 		4A58B38524CF3C10008038A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38424CF3C10008038A2 /* AppDelegate.swift */; };
 		4A58B38724CF3C10008038A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38624CF3C10008038A2 /* SceneDelegate.swift */; };
-		4A58B38924CF3C10008038A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38824CF3C10008038A2 /* ViewController.swift */; };
+		4A58B38924CF3C10008038A2 /* MainDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38824CF3C10008038A2 /* MainDashboardViewController.swift */; };
 		4A58B38C24CF3C10008038A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38A24CF3C10008038A2 /* Main.storyboard */; };
 		4A58B38E24CF3C12008038A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38D24CF3C12008038A2 /* Assets.xcassets */; };
 		4A58B39124CF3C12008038A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38F24CF3C12008038A2 /* LaunchScreen.storyboard */; };
@@ -28,10 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A23F68D24D9AEBB005C0B02 /* SurveyInviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInviteViewController.swift; sourceTree = "<group>"; };
+		4A23F68F24D9AEDC005C0B02 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		4A58B38124CF3C10008038A2 /* feedbacr_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feedbacr_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A58B38424CF3C10008038A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A58B38624CF3C10008038A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4A58B38824CF3C10008038A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A58B38824CF3C10008038A2 /* MainDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardViewController.swift; sourceTree = "<group>"; };
 		4A58B38B24CF3C10008038A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A58B38D24CF3C12008038A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A58B39024CF3C12008038A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,7 +88,9 @@
 				4A58B38424CF3C10008038A2 /* AppDelegate.swift */,
 				4A9DCB5924D86C2D00042CFF /* QuestionData.swift */,
 				4A58B38624CF3C10008038A2 /* SceneDelegate.swift */,
-				4A58B38824CF3C10008038A2 /* ViewController.swift */,
+				4A58B38824CF3C10008038A2 /* MainDashboardViewController.swift */,
+				4A23F68D24D9AEBB005C0B02 /* SurveyInviteViewController.swift */,
+				4A23F68F24D9AEDC005C0B02 /* SurveyViewController.swift */,
 				4A58B38A24CF3C10008038A2 /* Main.storyboard */,
 				4A58B38D24CF3C12008038A2 /* Assets.xcassets */,
 				4A58B38F24CF3C12008038A2 /* LaunchScreen.storyboard */,
@@ -203,9 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A58B38924CF3C10008038A2 /* ViewController.swift in Sources */,
+				4A58B38924CF3C10008038A2 /* MainDashboardViewController.swift in Sources */,
 				4A58B38524CF3C10008038A2 /* AppDelegate.swift in Sources */,
 				4A58B38724CF3C10008038A2 /* SceneDelegate.swift in Sources */,
+				4A23F68E24D9AEBB005C0B02 /* SurveyInviteViewController.swift in Sources */,
+				4A23F69024D9AEDC005C0B02 /* SurveyViewController.swift in Sources */,
 				4A9DCB5A24D86C2D00042CFF /* QuestionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

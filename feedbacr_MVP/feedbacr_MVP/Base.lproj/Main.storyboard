@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Dashboard View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainDashboardViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="T2X-T4-iyO" kind="show" id="m4U-N8-cvQ"/>
+                                                    <segue destination="T2X-T4-iyO" kind="show" identifier="mainToSurveyInviteSeque" id="m4U-N8-cvQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -109,13 +109,13 @@
         <!--Feedback Survey-->
         <scene sceneID="sUC-Rc-qmy">
             <objects>
-                <viewController id="m9G-sg-chh" sceneMemberID="viewController">
+                <viewController id="m9G-sg-chh" customClass="SurveyInviteViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WNr-iY-Upr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="89Q-pc-1Z4">
-                                <rect key="frame" x="87" y="230" width="240" height="334"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="89Q-pc-1Z4">
+                                <rect key="frame" x="87" y="230" width="240" height="402"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RUT-MX-IKg">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
@@ -124,18 +124,32 @@
                                             <constraint firstAttribute="width" constant="240" id="t4Q-cs-vzw"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="057-Bc-ORd">
+                                        <rect key="frame" x="0.0" y="275" width="240" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Feedbacr Survey"/>
+                                        <connections>
+                                            <segue destination="5pJ-Qn-BhA" kind="show" identifier="temperaryInviteToSurvey" id="0YG-aR-UCs"/>
+                                        </connections>
+                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="IId-br-cTM">
-                                        <rect key="frame" x="0.0" y="290" width="240" height="44"/>
+                                        <rect key="frame" x="0.0" y="358" width="240" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xun-WK-KOi">
                                                 <rect key="frame" x="0.0" y="0.0" width="107.5" height="44"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
                                                 <state key="normal" title="Email"/>
+                                                <connections>
+                                                    <action selector="emailButtonTapped:" destination="m9G-sg-chh" eventType="touchUpInside" id="hwt-H3-t5m"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZP-GJ-Lll">
                                                 <rect key="frame" x="132.5" y="0.0" width="107.5" height="44"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
                                                 <state key="normal" title="Text"/>
+                                                <connections>
+                                                    <action selector="textButtonTapped:" destination="m9G-sg-chh" eventType="touchUpInside" id="gOS-Ua-CLw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -156,45 +170,59 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Feedback Survey" leftItemsSupplementBackButton="YES" id="R1o-U0-6Yf">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Tn1-Jl-hrx"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="Tn1-Jl-hrx">
+                            <connections>
+                                <segue destination="M94-N4-DmR" kind="unwind" unwindAction="unwindMainDashboardSequeWithSegue:" id="P0n-LW-rcG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="QRImageView" destination="RUT-MX-IKg" id="wFd-y7-SbJ"/>
+                        <outlet property="emailButtonOutlet" destination="xun-WK-KOi" id="EG6-u0-Est"/>
+                        <outlet property="textButtonOutlet" destination="qZP-GJ-Lll" id="vIM-u7-okK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMs-xk-hxV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="M94-N4-DmR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2794" y="-139"/>
         </scene>
-        <!--View Controller-->
+        <!--Survey View Controller-->
         <scene sceneID="j6S-1y-lYV">
             <objects>
-                <viewController id="5pJ-Qn-BhA" sceneMemberID="viewController">
+                <viewController id="5pJ-Qn-BhA" customClass="SurveyViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="frC-NA-XDF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fck-AH-bSR">
-                                <rect key="frame" x="10" y="259" width="394" height="23"/>
+                                <rect key="frame" x="10" y="271" width="394" height="23"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s48-fJ-y0v">
-                                <rect key="frame" x="314" y="777" width="40" height="35"/>
+                                <rect key="frame" x="314" y="723" width="40" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="NASButtonTapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="mp1-4D-NcF"/>
+                                    <action selector="nextButtonTapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="cTN-1S-BiV"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Response" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q11-qA-Y5x" userLabel="textFieldResponse">
-                                <rect key="frame" x="10" y="378" width="394" height="34"/>
+                                <rect key="frame" x="10" y="324" width="394" height="34"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback surcey for Interview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJN-z7-a9Q">
-                                <rect key="frame" x="32" y="94" width="350" height="30"/>
+                                <rect key="frame" x="32" y="106" width="350" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="z7k-Ba-iKM" userLabel="multiChoiceStackView">
-                                <rect key="frame" x="30" y="382" width="354" height="130"/>
+                                <rect key="frame" x="30" y="394" width="354" height="130"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYQ-XD-KRD">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="22"/>
@@ -202,6 +230,9 @@
                                         <state key="normal" title="Response 1" image="circle" catalog="system">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="singleResponseButtonTapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="OEy-qN-Y37"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEI-qz-wTW">
                                         <rect key="frame" x="0.0" y="54" width="354" height="22"/>
@@ -209,6 +240,9 @@
                                         <state key="normal" title="Response 2" image="circle" catalog="system">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="singleResponseButtonTapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="wyi-Id-VOs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4y-c0-j3s">
                                         <rect key="frame" x="0.0" y="108" width="354" height="22"/>
@@ -216,11 +250,14 @@
                                         <state key="normal" title="Response 3" image="circle" catalog="system">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="singleResponseButtonTapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="ui6-os-7Lu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y3U-7f-FbI" userLabel="ratingStackView">
-                                <rect key="frame" x="20" y="389" width="374" height="96.5"/>
+                                <rect key="frame" x="20" y="401" width="374" height="96.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="alx-bN-YFi" userLabel="ratingNumbersStackView">
                                         <rect key="frame" x="60" y="0.0" width="254" height="47.5"/>
@@ -232,6 +269,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="27" height="22"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" image="circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="RRButton1Tapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="zvy-D7-1tg"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRj-oJ-ymR">
                                                         <rect key="frame" x="0.0" y="27" width="27" height="20.5"/>
@@ -248,6 +288,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="26.5" height="22"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" image="circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="RRButton2Tapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="JgU-hO-0sI"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0f-5y-eFU">
                                                         <rect key="frame" x="0.0" y="27" width="26.5" height="20.5"/>
@@ -264,6 +307,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="27" height="22"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" image="circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="RRButton3Tapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="R8E-Oe-5zl"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eks-wG-B2I">
                                                         <rect key="frame" x="0.0" y="27" width="27" height="20.5"/>
@@ -280,6 +326,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="26.5" height="22"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" image="circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="RRButton4Tapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="567-zT-HyQ"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoz-gV-hGH">
                                                         <rect key="frame" x="0.0" y="27" width="26.5" height="20.5"/>
@@ -296,6 +345,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="27" height="22"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" image="circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="RRButon5Tapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="DkJ-pt-g6u"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhp-d1-MYB">
                                                         <rect key="frame" x="0.0" y="27" width="27" height="20.5"/>
@@ -335,7 +387,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8oW-nF-jLJ" userLabel="multiSelectionStackView">
-                                <rect key="frame" x="30" y="382" width="354" height="184"/>
+                                <rect key="frame" x="30" y="394" width="354" height="184"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp5-Bb-9cB">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="22"/>
@@ -343,6 +395,9 @@
                                         <state key="normal" title="Response 1" image="square" catalog="system">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="multiResponseButtonTapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="L4r-2L-VCQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2m-Ew-PxD">
                                         <rect key="frame" x="0.0" y="54" width="354" height="22"/>
@@ -350,6 +405,9 @@
                                         <state key="normal" title="Response 2" image="square" catalog="system">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="multiResponseButtonTapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="bk2-8X-fgE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWC-zT-n0f">
                                         <rect key="frame" x="0.0" y="108" width="354" height="22"/>
@@ -357,6 +415,9 @@
                                         <state key="normal" title="Response 3" image="square" catalog="system">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="multiResponseButtonTapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="2QE-sB-dx5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdJ-Yo-I1Y">
                                         <rect key="frame" x="0.0" y="162" width="354" height="22"/>
@@ -364,6 +425,9 @@
                                         <state key="normal" title="Response 4" image="square" catalog="system">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="multiResponseButtonTapped:" destination="5pJ-Qn-BhA" eventType="touchUpInside" id="g6p-3Y-vGj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -392,7 +456,39 @@
                             <constraint firstItem="Vyl-Ug-EEz" firstAttribute="bottom" secondItem="q11-qA-Y5x" secondAttribute="bottom" constant="450" id="wCx-6G-7Fb"/>
                             <constraint firstItem="z7k-Ba-iKM" firstAttribute="top" secondItem="QJN-z7-a9Q" secondAttribute="bottom" constant="258" id="z4a-Er-Pep"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="q11-qA-Y5x"/>
+                                <exclude reference="z7k-Ba-iKM"/>
+                                <exclude reference="8oW-nF-jLJ"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="9AP-Zw-9lH"/>
+                    <connections>
+                        <outlet property="mainSurveyLabel" destination="QJN-z7-a9Q" id="3iP-GN-d39"/>
+                        <outlet property="multiAnswerResponseStackView" destination="8oW-nF-jLJ" id="hfg-fL-YYl"/>
+                        <outlet property="multiResponse1" destination="Gp5-Bb-9cB" id="IQx-ja-Eia"/>
+                        <outlet property="multiResponse2" destination="Z2m-Ew-PxD" id="szM-ZI-rIB"/>
+                        <outlet property="multiResponse3" destination="WWC-zT-n0f" id="5Vf-p5-Uhi"/>
+                        <outlet property="multiResponse4" destination="pdJ-Yo-I1Y" id="m94-oh-ijC"/>
+                        <outlet property="nextAndSubmitButton" destination="s48-fJ-y0v" id="Y98-gg-PKb"/>
+                        <outlet property="questionsLabel" destination="Fck-AH-bSR" id="Md0-Bg-fYk"/>
+                        <outlet property="rangedNumberStackViews" destination="alx-bN-YFi" id="T0a-ab-1fK"/>
+                        <outlet property="rangedResponse1Label" destination="XRj-oJ-ymR" id="k8D-4Y-kVZ"/>
+                        <outlet property="rangedResponse2Label" destination="d0f-5y-eFU" id="36y-v0-Nyw"/>
+                        <outlet property="rangedResponse3Label" destination="Eks-wG-B2I" id="GQ2-kf-Guk"/>
+                        <outlet property="rangedResponse4Label" destination="aoz-gV-hGH" id="Vfx-ux-0V7"/>
+                        <outlet property="rangedResponse5Label" destination="Hhp-d1-MYB" id="4AZ-i4-3rU"/>
+                        <outlet property="ratingHighLabel" destination="V7r-0A-Q99" id="0pj-6e-iSJ"/>
+                        <outlet property="ratingLowAndHighStackView" destination="86Y-x0-vkl" id="itk-wd-mpY"/>
+                        <outlet property="ratingLowLabel" destination="W1L-Rp-JE6" id="EKp-ic-l67"/>
+                        <outlet property="responseTextField" destination="q11-qA-Y5x" id="Qup-4s-kS3"/>
+                        <outlet property="singleResponse1" destination="fYQ-XD-KRD" id="XoE-FY-oxi"/>
+                        <outlet property="singleResponse2" destination="VEI-qz-wTW" id="CN5-nq-LVl"/>
+                        <outlet property="singleResponse3" destination="g4y-c0-j3s" id="epy-IU-Knw"/>
+                        <outlet property="singleResponseStackView" destination="z7k-Ba-iKM" id="dJb-So-qqD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OtW-FE-cOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
