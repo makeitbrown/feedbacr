@@ -1,5 +1,5 @@
 //
-//  SurveyInviteViewController.swift
+//  SurveyEndingPageViewController.swift
 //  feedbacr_MVP
 //
 //  Created by Michael Brown on 8/4/20.
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class SurveyInviteViewController: UIViewController {
+class SurveyEndingPageViewController: UIViewController {
     
 //    MARK: Outlets and Actions
+
+//    OUTLETS
     
-//   
+//    
     
     override func viewDidLoad() {
         super.viewDidLoad()

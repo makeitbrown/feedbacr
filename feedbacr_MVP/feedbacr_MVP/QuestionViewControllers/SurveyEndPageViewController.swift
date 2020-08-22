@@ -1,18 +1,21 @@
 //
-//  SurveyInviteViewController.swift
+//  SurveyEndPageViewController.swift
 //  feedbacr_MVP
 //
-//  Created by Michael Brown on 8/4/20.
+//  Created by Michael Brown on 8/21/20.
 //  Copyright © 2020 Michael Brown. All rights reserved.
 //
 
 import UIKit
 
-class SurveyInviteViewController: UIViewController {
+class SurveyEndPageViewController: UIViewController {
     
-//    MARK: Outlets and Actions
+//    MARK:- OUTLETS AND ACTIONS
     
-//   
+    @IBOutlet weak var instructionTextLabel: UILabel!
+    
+    @IBAction func sendResponsesButtonTapped(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

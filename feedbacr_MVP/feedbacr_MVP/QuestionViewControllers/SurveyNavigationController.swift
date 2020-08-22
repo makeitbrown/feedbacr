@@ -1,19 +1,15 @@
 //
-//  SurveyInviteViewController.swift
+//  SurveyNavigationController.swift
 //  feedbacr_MVP
 //
-//  Created by Michael Brown on 8/4/20.
+//  Created by Michael Brown on 8/21/20.
 //  Copyright © 2020 Michael Brown. All rights reserved.
 //
 
 import UIKit
 
-class SurveyInviteViewController: UIViewController {
-    
-//    MARK: Outlets and Actions
-    
-//   
-    
+class SurveyNavigationController: UINavigationController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
