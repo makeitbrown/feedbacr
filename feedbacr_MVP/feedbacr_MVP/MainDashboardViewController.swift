@@ -27,6 +27,13 @@ class MainDashboardViewController: UIViewController {
     @IBAction func textButtonTapped(_ sender: Any) {
     }
     
+    @IBAction func interviewJournalQuestionTapped(_ sender: Any) {
+        
+//        let journalTableVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InterviewQuestionsJournalTableViewController") as! InterviewQuestionJournalTableViewController
+        
+//        navigationController?.pushViewController(journalTableVC, animated: true)
+        
+    }
     //    UNWIND SEQUES
     @IBAction func unwindMainDashboardSeque(segue: UIStoryboardSegue) {
         

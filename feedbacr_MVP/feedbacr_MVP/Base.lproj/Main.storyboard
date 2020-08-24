@@ -9,6 +9,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Interview Question Journal Table View Controller-->
+        <scene sceneID="AED-8d-e9m">
+            <objects>
+                <tableViewController storyboardIdentifier="InterviewQuestionsJournalTableViewController" id="asi-5i-mpk" customClass="InterviewQuestionJournalTableViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ieL-GV-ose">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <color key="separatorColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="R8v-ka-j7k" style="IBUITableViewCellStyleDefault" id="geK-Hr-xbj">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="geK-Hr-xbj" id="4JQ-FT-s0Q">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R8v-ka-j7k">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemTealColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="asi-5i-mpk" id="OjV-eK-Zqh"/>
+                            <outlet property="delegate" destination="asi-5i-mpk" id="akT-e3-O5b"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="msD-NN-ag4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gM-VU-wXH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="-233"/>
+        </scene>
         <!--Main Dashboard View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -84,6 +125,10 @@
                                                 <state key="normal" title="Interview Question Journal">
                                                     <color key="titleColor" red="0.36027872560000002" green="0.78126066920000004" blue="0.98042732480000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="interviewJournalQuestionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOn-7w-J6b"/>
+                                                    <segue destination="asi-5i-mpk" kind="show" id="bUq-LD-HB1"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-SU-egx">
                                                 <rect key="frame" x="0.0" y="151.5" width="394" height="50.5"/>
@@ -110,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823" y="-233"/>
+            <point key="canvasLocation" x="1731.8840579710147" y="-233.03571428571428"/>
         </scene>
         <!--Text Response View Controller-->
         <scene sceneID="obT-eo-Rk9">
@@ -181,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mza-jh-qzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2019" y="-929"/>
+            <point key="canvasLocation" x="2929" y="-933"/>
         </scene>
         <!--Multiple Choice View Controller-->
         <scene sceneID="5fk-ck-sPK">
@@ -264,6 +309,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KL-5e-fnX">
                                         <rect key="frame" x="0.0" y="216" width="354" height="22"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                         <color key="tintColor" systemColor="systemTealColor"/>
                                         <state key="normal" title="Response 5" image="circle" catalog="system">
                                             <color key="titleColor" systemColor="systemTealColor"/>
@@ -307,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k92-CR-qlg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2019" y="-233"/>
+            <point key="canvasLocation" x="2928.985507246377" y="-233.03571428571428"/>
         </scene>
         <!--Multiple Selection View Controller-->
         <scene sceneID="qgc-hZ-wug">
@@ -421,7 +467,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5MP-RB-7fr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2019" y="433"/>
+            <point key="canvasLocation" x="2929" y="441"/>
         </scene>
         <!--Survey End Page View Controller-->
         <scene sceneID="58i-lr-XpO">
@@ -489,7 +535,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbk-kU-L79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3313" y="-233"/>
+            <point key="canvasLocation" x="4221.739130434783" y="-233.03571428571428"/>
         </scene>
     </scenes>
     <resources>

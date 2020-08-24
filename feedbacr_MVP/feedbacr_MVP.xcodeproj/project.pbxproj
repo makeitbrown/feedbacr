@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A2CF3BE24F1F1A400D35D0D /* InterviewQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF3BD24F1F1A400D35D0D /* InterviewQuestion.swift */; };
+		4A2CF3C024F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF3BF24F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift */; };
 		4A58B38524CF3C10008038A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38424CF3C10008038A2 /* AppDelegate.swift */; };
 		4A58B38724CF3C10008038A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38624CF3C10008038A2 /* SceneDelegate.swift */; };
 		4A58B38924CF3C10008038A2 /* MainDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38824CF3C10008038A2 /* MainDashboardViewController.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A2CF3BD24F1F1A400D35D0D /* InterviewQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestion.swift; sourceTree = "<group>"; };
+		4A2CF3BF24F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionJournalTableViewController.swift; sourceTree = "<group>"; };
 		4A58B38124CF3C10008038A2 /* feedbacr_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feedbacr_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A58B38424CF3C10008038A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A58B38624CF3C10008038A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A3F828C24F0071E00D62B80 /* QuestionViewControllers */ = {
+		4A2CF3BC24F1F12B00D35D0D /* InterviewQuestionJournalData */ = {
+			isa = PBXGroup;
+			children = (
+				4A2CF3BD24F1F1A400D35D0D /* InterviewQuestion.swift */,
+				4A2CF3BF24F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift */,
+			);
+			path = InterviewQuestionJournalData;
+			sourceTree = "<group>";
+		};
+		4A3F828C24F0071E00D62B80 /* SurveyQuestionsViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				4AC8958224F0188800853811 /* SurveyNavigationController.swift */,
@@ -81,7 +94,7 @@
 				4AC8958024F0168700853811 /* MultipleSelectionViewController.swift */,
 				4AC8958424F01AD600853811 /* SurveyEndPageViewController.swift */,
 			);
-			path = QuestionViewControllers;
+			path = SurveyQuestionsViewControllers;
 			sourceTree = "<group>";
 		};
 		4A58B37824CF3C10008038A2 = {
@@ -105,8 +118,9 @@
 		4A58B38324CF3C10008038A2 /* feedbacr_MVP */ = {
 			isa = PBXGroup;
 			children = (
+				4A2CF3BC24F1F12B00D35D0D /* InterviewQuestionJournalData */,
 				4A58B38424CF3C10008038A2 /* AppDelegate.swift */,
-				4A3F828C24F0071E00D62B80 /* QuestionViewControllers */,
+				4A3F828C24F0071E00D62B80 /* SurveyQuestionsViewControllers */,
 				4A9DCB5924D86C2D00042CFF /* QuestionData.swift */,
 				4AC8958624F0283900853811 /* QuestionFunctions.swift */,
 				4A58B38624CF3C10008038A2 /* SceneDelegate.swift */,
@@ -231,6 +245,8 @@
 			files = (
 				4A58B38924CF3C10008038A2 /* MainDashboardViewController.swift in Sources */,
 				4AC8958124F0168700853811 /* MultipleSelectionViewController.swift in Sources */,
+				4A2CF3BE24F1F1A400D35D0D /* InterviewQuestion.swift in Sources */,
+				4A2CF3C024F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift in Sources */,
 				4A58B38524CF3C10008038A2 /* AppDelegate.swift in Sources */,
 				4AC8958724F0283900853811 /* QuestionFunctions.swift in Sources */,
 				4AC8957F24F0167100853811 /* MultipleChoiceViewController.swift in Sources */,

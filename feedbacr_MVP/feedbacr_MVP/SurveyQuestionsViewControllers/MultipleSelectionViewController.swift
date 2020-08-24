@@ -1,5 +1,5 @@
 //
-//  MultipleChoiceViewController.swift
+//  MultipleSelectionViewController.swift
 //  feedbacr_MVP
 //
 //  Created by Michael Brown on 8/21/20.
@@ -8,44 +8,51 @@
 
 import UIKit
 
-class MultipleChoiceViewController: UIViewController {
+class MultipleSelectionViewController: UIViewController {
     
-//    MARK:- OUTLETS AND ACTIONS
-
-//    OUTLETS
+    //    MARK:- OUTLETS AND ACTIONS
+    
+    //    OUTLETS
     
     //    MAIN SURVEY LABEL
-        @IBOutlet weak var mainSurveyLabel: UILabel!
-        
+    @IBOutlet weak var mainSurveyLabel: UILabel!
+    
     //    QUESTION LABEL
-        @IBOutlet weak var questionsLabel: UILabel!
-
-    //    SINGLE ANSWER RESPONSE
-        @IBOutlet weak var singleResponseStackView: UIStackView!
-        @IBOutlet weak var singleResponse1: UIButton!
-        @IBOutlet weak var singleResponse2: UIButton!
-        @IBOutlet weak var singleResponse3: UIButton!
-    @IBOutlet weak var singleResponse4: UIButton!
-    @IBOutlet weak var singleResponse5: UIButton!
-        @IBAction func singleResponseButtonTapped(_ sender: Any) {
-            
-        }
+    @IBOutlet weak var questionsLabel: UILabel!
+    
+    //    MULTI ANSWER RESPONSE
+    @IBOutlet weak var multiAnswerResponseStackView: UIStackView!
+    @IBOutlet weak var multiResponse1: UIButton!
+    @IBOutlet weak var multiResponse2: UIButton!
+    @IBOutlet weak var multiResponse3: UIButton!
+    @IBOutlet weak var multiResponse4: UIButton!
+    @IBAction func multiResponseButtonTapped(_ sender: Any) {
+    }
     
     //    SUBMIT AND NEXT BUTTON
-        @IBOutlet weak var nextAndSubmitButton: UIButton!
-        @IBAction func NASButtonTapped(_ sender: Any) {
-            
-            nextQuesion()
-            
-        }
-
+    @IBOutlet weak var nextAndSubmitButton: UIButton!
+    @IBAction func NASButtonTapped(_ sender: Any) {
+        
+        nextQuesion()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-updateUI()
+        hiddenButtons()
+        updateUI()
         // Do any additional setup after loading the view.
     }
     
     // MARK:- FUNCTIONS
+    
+    func hiddenButtons(){
+        
+        multiResponse1.isHidden = true
+        multiResponse2.isHidden = true
+        multiResponse3.isHidden = true
+        multiResponse4.isHidden = true
+       
+    }
     
     func updateUI() {
         let currentQuestion = questions[questionIndex]
@@ -53,13 +60,23 @@ updateUI()
         
         questionsLabel.text = currentQuestion.questionText
         
-        singleResponse1.setTitle("\(currentQuestion.responseAnswers[0].answerText)", for: .normal)
-        singleResponse2.setTitle("\(currentQuestion.responseAnswers[1].answerText)", for: .normal)
-        singleResponse3.setTitle("\(currentQuestion.responseAnswers[2].answerText)", for: .normal)
-        singleResponse4.setTitle("\(currentQuestion.responseAnswers[3].answerText)", for: .normal)
-        singleResponse5.setTitle("\(currentQuestion.responseAnswers[4].answerText)", for: .normal)
-//        if on last question update next label
-    
+        let answerButtons = [multiResponse1, multiResponse2, multiResponse3, multiResponse4]
+        var answerIndex = 0
+        for answer in currentAnswers {
+            
+            let button = answerButtons[answerIndex]
+            
+            button?.isHidden = false
+            button?.setTitle(answer.answerText, for: .normal)
+            
+            answerIndex += 1
+        }
+//        multiResponse1.setTitle("\(currentQuestion.responseAnswers[0].answerText)", for: .normal)
+//        multiResponse2.setTitle("\(currentQuestion.responseAnswers[1].answerText)", for: .normal)
+//        multiResponse3.setTitle("\(currentQuestion.responseAnswers[2].answerText)", for: .normal)
+//        multiResponse4.setTitle("\(currentQuestion.responseAnswers[3].answerText)", for: .normal)
+        //        if on last question update next label
+        
     }
     
     func nextQuesion() {
@@ -71,7 +88,7 @@ updateUI()
         } else {
             loadQuestion()
             updateUI()
-            nextAndSubmitButton.setTitle("Submit", for: .normal)
+            nextAndSubmitButton.titleLabel?.text = "Submit"
             
             if nextAndSubmitButton.currentTitle == "Submit" {
                 
@@ -81,9 +98,9 @@ updateUI()
                 print(Error.self)
             }
             
-    }
-    
-    
+        }
+        
+        
     }
     
     func loadQuestion() {
@@ -102,13 +119,13 @@ updateUI()
         }
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
