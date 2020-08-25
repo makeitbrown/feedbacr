@@ -253,14 +253,14 @@
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback surcey for Interview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTv-sB-aLn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback survey for Interview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTv-sB-aLn">
                                 <rect key="frame" x="32" y="94" width="350" height="28"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cr6-ET-njE">
-                                <rect key="frame" x="300" y="777" width="54" height="35"/>
+                                <rect key="frame" x="275" y="777" width="79" height="35"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="Next">
@@ -288,7 +288,7 @@
                             <constraint firstItem="5CN-bD-obK" firstAttribute="leading" secondItem="A3J-SZ-pZo" secondAttribute="leading" constant="10" id="Czs-pf-yAR"/>
                             <constraint firstItem="A3J-SZ-pZo" firstAttribute="trailing" secondItem="rTv-sB-aLn" secondAttribute="trailing" constant="32" id="Dqt-KW-8nA"/>
                             <constraint firstItem="akD-Vj-oob" firstAttribute="leading" secondItem="A3J-SZ-pZo" secondAttribute="leading" constant="10" id="FEW-Z4-3mc"/>
-                            <constraint firstItem="cr6-ET-njE" firstAttribute="leading" secondItem="A3J-SZ-pZo" secondAttribute="leading" constant="300" id="GwN-ZK-WPO"/>
+                            <constraint firstItem="cr6-ET-njE" firstAttribute="leading" secondItem="A3J-SZ-pZo" secondAttribute="leading" constant="275" id="GwN-ZK-WPO"/>
                             <constraint firstItem="A3J-SZ-pZo" firstAttribute="bottom" secondItem="cr6-ET-njE" secondAttribute="bottom" constant="50" id="MwX-oZ-3VI"/>
                             <constraint firstItem="akD-Vj-oob" firstAttribute="top" secondItem="rTv-sB-aLn" secondAttribute="bottom" constant="135" id="OkF-PS-ZBR"/>
                             <constraint firstItem="rTv-sB-aLn" firstAttribute="leading" secondItem="A3J-SZ-pZo" secondAttribute="leading" constant="32" id="PHC-pH-mkE"/>
@@ -324,14 +324,14 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback surcey for Interview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVI-sZ-wYA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback survey for Interview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVI-sZ-wYA">
                                 <rect key="frame" x="32" y="94" width="350" height="28"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45n-8v-Xa7">
-                                <rect key="frame" x="300" y="777" width="54" height="35"/>
+                                <rect key="frame" x="275" y="777" width="79" height="35"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="Next">
@@ -407,7 +407,7 @@
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstItem="uXl-3i-I6y" firstAttribute="top" secondItem="jVI-sZ-wYA" secondAttribute="bottom" constant="135" id="0ky-xo-tVU"/>
-                            <constraint firstItem="45n-8v-Xa7" firstAttribute="leading" secondItem="9Mj-i0-s9w" secondAttribute="leading" constant="300" id="13M-Sp-iJu"/>
+                            <constraint firstItem="45n-8v-Xa7" firstAttribute="leading" secondItem="9Mj-i0-s9w" secondAttribute="leading" constant="275" id="13M-Sp-iJu"/>
                             <constraint firstItem="9Mj-i0-s9w" firstAttribute="trailing" secondItem="45n-8v-Xa7" secondAttribute="trailing" constant="60" id="GX1-AS-CAm"/>
                             <constraint firstItem="9Mj-i0-s9w" firstAttribute="trailing" secondItem="jVI-sZ-wYA" secondAttribute="trailing" constant="32" id="IuW-1S-zaF"/>
                             <constraint firstItem="9Mj-i0-s9w" firstAttribute="bottom" secondItem="45n-8v-Xa7" secondAttribute="bottom" constant="50" id="Wul-DN-zSn"/>
@@ -451,14 +451,14 @@
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback surcey for Interview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcR-OF-4Fe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback survey for Interview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcR-OF-4Fe">
                                 <rect key="frame" x="32" y="94" width="350" height="28"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOm-lK-2oJ">
-                                <rect key="frame" x="300" y="777" width="54" height="35"/>
+                                <rect key="frame" x="275" y="777" width="79" height="35"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="Next">
@@ -522,7 +522,7 @@
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstItem="8oW-nF-jLJ" firstAttribute="leading" secondItem="4sg-xQ-g6U" secondAttribute="leading" constant="30" id="5oN-cW-gpT"/>
-                            <constraint firstItem="wOm-lK-2oJ" firstAttribute="leading" secondItem="4sg-xQ-g6U" secondAttribute="leading" constant="300" id="8LV-Yy-ADe"/>
+                            <constraint firstItem="wOm-lK-2oJ" firstAttribute="leading" secondItem="4sg-xQ-g6U" secondAttribute="leading" constant="275" id="8LV-Yy-ADe"/>
                             <constraint firstItem="gcR-OF-4Fe" firstAttribute="top" secondItem="4sg-xQ-g6U" secondAttribute="top" constant="50" id="FXk-ww-HsZ"/>
                             <constraint firstItem="ZV5-CS-XCf" firstAttribute="top" secondItem="gcR-OF-4Fe" secondAttribute="bottom" constant="135" id="HoF-p2-LWE"/>
                             <constraint firstItem="8oW-nF-jLJ" firstAttribute="top" secondItem="gcR-OF-4Fe" secondAttribute="bottom" constant="258" id="Jw9-aJ-xyx"/>

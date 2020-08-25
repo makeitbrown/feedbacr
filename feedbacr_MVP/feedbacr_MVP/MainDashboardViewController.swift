@@ -21,6 +21,7 @@ class MainDashboardViewController: UIViewController {
     
     @IBAction func tempSurveyButtonTapped(_ sender: Any) {
         present(navController!, animated: true, completion: nil)
+        navController?.isNavigationBarHidden = true
     }
     @IBAction func emailButtonTapped(_ sender: Any) {
     }

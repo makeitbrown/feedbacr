@@ -28,7 +28,7 @@ class TextResponseViewController: UIViewController {
     @IBOutlet weak var nextAndSubmitButton: UIButton!
     @IBAction func NASButtonTapped(_ sender: Any) {
         
-        nextQuesion()
+        nextQuestion()
     }
     
     //    MARK:- VARIABLES AND CONSTANTS
@@ -44,40 +44,20 @@ class TextResponseViewController: UIViewController {
     // MARK:- FUNCTIONS
     
     func updateUI() {
-        let currentQuestion = questions[questionIndex]
+        let currentQuestion = questions[Question.questionIndex]
         let currentAnswers = currentQuestion.responseAnswers
         
         questionsLabel.text = currentQuestion.questionText
-//        if on last question update next label
-    
     }
     
-    func nextQuesion() {
+    func nextQuestion() {
         
-        questionIndex += 1
-        if questionIndex < questions.count {
-            loadQuestion()
-            updateUI()
-        } else {
-            loadQuestion()
-            updateUI()
-            nextAndSubmitButton.setTitle("Submit", for: .normal)
-            
-            if nextAndSubmitButton.currentTitle == "Submit" {
-                
-                let surveyEndPageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SurveyEndPageViewController") as! SurveyEndPageViewController
-                navigationController?.pushViewController(surveyEndPageVC, animated: true)
-            } else {
-                print(Error.self)
-            }
-            
-    }
-    
-    
+        Question.questionIndex += 1
+        loadQuestion()
     }
     
     func loadQuestion() {
-        let currentQuestion = questions[questionIndex]
+        let currentQuestion = questions[Question.questionIndex]
         
         switch currentQuestion.type {
         case .text:

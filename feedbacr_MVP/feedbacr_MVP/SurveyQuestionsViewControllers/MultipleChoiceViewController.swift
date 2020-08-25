@@ -31,13 +31,13 @@ class MultipleChoiceViewController: UIViewController {
         
     }
     var isTheLastQuestion: Bool {
-        return questionIndex == questions.count - 1
+        return Question.questionIndex == questions.count - 1
     }
     //    SUBMIT AND NEXT BUTTON
     @IBOutlet weak var nextAndSubmitButton: UIButton!
     @IBAction func NASButtonTapped(_ sender: Any) {
         
-        nextQuesion()
+        nextQuestion()
         
     }
     
@@ -61,7 +61,7 @@ class MultipleChoiceViewController: UIViewController {
     }
     
     func updateUI() {
-        let currentQuestion = questions[questionIndex]
+        let currentQuestion = questions[Question.questionIndex]
         let currentAnswers = currentQuestion.responseAnswers
         
         if isTheLastQuestion {
@@ -77,23 +77,19 @@ class MultipleChoiceViewController: UIViewController {
             let button = answerButtons[answerIndex]
             
             button?.isHidden = false
-            button?.setTitle(answer.answerText, for: .normal)
+            button?.setTitle(answer, for: .normal)
             
             answerIndex += 1
         }
         
     }
     
-    func nextQuesion() {
-        
-//        updateUI()
-        
+    func nextQuestion() {
         if isTheLastQuestion {
             pushSurveyEndVC()
         } else {
-            questionIndex += 1
+            Question.questionIndex += 1
             loadQuestion()
-            
         }
     }
     
@@ -103,7 +99,7 @@ class MultipleChoiceViewController: UIViewController {
     }
     
     func loadQuestion() {
-        let currentQuestion = questions[questionIndex]
+        let currentQuestion = questions[Question.questionIndex]
         
         switch currentQuestion.type {
         case .text:

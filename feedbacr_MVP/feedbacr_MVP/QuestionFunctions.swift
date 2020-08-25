@@ -10,7 +10,7 @@ import Foundation
 
 // MARK:- Variables and Constants
 
-var questionIndex = 0
+//var questionIndex = 0
 
 
 // MARK:- FUNCTIONS

@@ -33,7 +33,7 @@ class MultipleSelectionViewController: UIViewController {
     @IBOutlet weak var nextAndSubmitButton: UIButton!
     @IBAction func NASButtonTapped(_ sender: Any) {
         
-        nextQuesion()
+        nextQuestion()
     }
     
     override func viewDidLoad() {
@@ -55,7 +55,7 @@ class MultipleSelectionViewController: UIViewController {
     }
     
     func updateUI() {
-        let currentQuestion = questions[questionIndex]
+        let currentQuestion = questions[Question.questionIndex]
         let currentAnswers = currentQuestion.responseAnswers
         
         questionsLabel.text = currentQuestion.questionText
@@ -67,39 +67,21 @@ class MultipleSelectionViewController: UIViewController {
             let button = answerButtons[answerIndex]
             
             button?.isHidden = false
-            button?.setTitle(answer.answerText, for: .normal)
+            button?.setTitle(answer, for: .normal)
             
             answerIndex += 1
         }
         
     }
     
-    func nextQuesion() {
+    func nextQuestion() {
         
-        questionIndex += 1
-        if questionIndex < questions.count {
-            loadQuestion()
-            updateUI()
-        } else {
-            loadQuestion()
-            updateUI()
-            nextAndSubmitButton.titleLabel?.text = "Submit"
-            
-            if nextAndSubmitButton.currentTitle == "Submit" {
-                
-                let surveyEndPageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SurveyEndPageViewController") as! SurveyEndPageViewController
-                navigationController?.pushViewController(surveyEndPageVC, animated: true)
-            } else {
-                print(Error.self)
-            }
-            
-        }
-        
-        
+        Question.questionIndex += 1
+        loadQuestion()
     }
     
     func loadQuestion() {
-        let currentQuestion = questions[questionIndex]
+        let currentQuestion = questions[Question.questionIndex]
         
         switch currentQuestion.type {
         case .text:

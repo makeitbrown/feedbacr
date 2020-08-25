@@ -16,14 +16,13 @@
 		4A58B38E24CF3C12008038A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38D24CF3C12008038A2 /* Assets.xcassets */; };
 		4A58B39124CF3C12008038A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38F24CF3C12008038A2 /* LaunchScreen.storyboard */; };
 		4A58B39C24CF3C12008038A2 /* feedbacr_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B39B24CF3C12008038A2 /* feedbacr_MVPTests.swift */; };
-		4A9DCB5A24D86C2D00042CFF /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCB5924D86C2D00042CFF /* QuestionData.swift */; };
+		4A9DCB5A24D86C2D00042CFF /* SurveyQuestionsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCB5924D86C2D00042CFF /* SurveyQuestionsArray.swift */; };
 		4AA53D4C24F55A1400F01BA6 /* JournalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA53D4B24F55A1400F01BA6 /* JournalDetailViewController.swift */; };
-		4AA53D5024F561A500F01BA6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA53D4F24F561A500F01BA6 /* Question.swift */; };
+		4AA53D5024F561A500F01BA6 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA53D4F24F561A500F01BA6 /* QuestionData.swift */; };
 		4AC8957D24F0165A00853811 /* TextResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8957C24F0165A00853811 /* TextResponseViewController.swift */; };
 		4AC8957F24F0167100853811 /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8957E24F0167100853811 /* MultipleChoiceViewController.swift */; };
 		4AC8958124F0168700853811 /* MultipleSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8958024F0168700853811 /* MultipleSelectionViewController.swift */; };
 		4AC8958524F01AD600853811 /* SurveyEndPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8958424F01AD600853811 /* SurveyEndPageViewController.swift */; };
-		4AC8958724F0283900853811 /* QuestionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8958624F0283900853811 /* QuestionFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +49,13 @@
 		4A58B39724CF3C12008038A2 /* feedbacr_MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = feedbacr_MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A58B39B24CF3C12008038A2 /* feedbacr_MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbacr_MVPTests.swift; sourceTree = "<group>"; };
 		4A58B39D24CF3C12008038A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A9DCB5924D86C2D00042CFF /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
+		4A9DCB5924D86C2D00042CFF /* SurveyQuestionsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyQuestionsArray.swift; sourceTree = "<group>"; };
 		4AA53D4B24F55A1400F01BA6 /* JournalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalDetailViewController.swift; sourceTree = "<group>"; };
-		4AA53D4F24F561A500F01BA6 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4AA53D4F24F561A500F01BA6 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		4AC8957C24F0165A00853811 /* TextResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextResponseViewController.swift; sourceTree = "<group>"; };
 		4AC8957E24F0167100853811 /* MultipleChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewController.swift; sourceTree = "<group>"; };
 		4AC8958024F0168700853811 /* MultipleSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionViewController.swift; sourceTree = "<group>"; };
 		4AC8958424F01AD600853811 /* SurveyEndPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyEndPageViewController.swift; sourceTree = "<group>"; };
-		4AC8958624F0283900853811 /* QuestionFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +144,8 @@
 		4AA53D4D24F55A8300F01BA6 /* QuestionDataFiles */ = {
 			isa = PBXGroup;
 			children = (
-				4A9DCB5924D86C2D00042CFF /* QuestionData.swift */,
-				4AA53D4F24F561A500F01BA6 /* Question.swift */,
-				4AC8958624F0283900853811 /* QuestionFunctions.swift */,
+				4A9DCB5924D86C2D00042CFF /* SurveyQuestionsArray.swift */,
+				4AA53D4F24F561A500F01BA6 /* QuestionData.swift */,
 			);
 			name = QuestionDataFiles;
 			sourceTree = "<group>";
@@ -267,14 +264,13 @@
 				4A2CF3BE24F1F1A400D35D0D /* InterviewQuestion.swift in Sources */,
 				4A2CF3C024F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift in Sources */,
 				4A58B38524CF3C10008038A2 /* AppDelegate.swift in Sources */,
-				4AC8958724F0283900853811 /* QuestionFunctions.swift in Sources */,
 				4AC8957F24F0167100853811 /* MultipleChoiceViewController.swift in Sources */,
 				4AA53D4C24F55A1400F01BA6 /* JournalDetailViewController.swift in Sources */,
-				4AA53D5024F561A500F01BA6 /* Question.swift in Sources */,
+				4AA53D5024F561A500F01BA6 /* QuestionData.swift in Sources */,
 				4AC8958524F01AD600853811 /* SurveyEndPageViewController.swift in Sources */,
 				4AC8957D24F0165A00853811 /* TextResponseViewController.swift in Sources */,
 				4A58B38724CF3C10008038A2 /* SceneDelegate.swift in Sources */,
-				4A9DCB5A24D86C2D00042CFF /* QuestionData.swift in Sources */,
+				4A9DCB5A24D86C2D00042CFF /* SurveyQuestionsArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
