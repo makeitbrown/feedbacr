@@ -9,19 +9,99 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Journal Detail View Controller-->
+        <scene sceneID="3We-nZ-d3r">
+            <objects>
+                <viewController storyboardIdentifier="JournalDetailViewController" id="Xv4-xS-nvX" customClass="JournalDetailViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H50-TT-z98">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="8VW-IR-cr7">
+                                <rect key="frame" x="20" y="135" width="374" height="653"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="QuestionText" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H9C-9F-dZj">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="uih-TT-Ga0"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="systemTealColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ResponseArea" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v5f-0u-xJs">
+                                        <rect key="frame" x="0.0" y="99" width="374" height="554"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="554" id="dqa-Ff-CbK"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="systemTealColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyb-es-Bj5">
+                                <rect key="frame" x="0.0" y="29" width="414" height="56"/>
+                                <color key="barTintColor" systemColor="systemTealColor"/>
+                                <items>
+                                    <navigationItem id="LpK-n5-0E3">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="S6x-Nd-83o">
+                                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GQ7-sC-bQA">
+                                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MsI-Zm-KMt"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="8VW-IR-cr7" firstAttribute="top" secondItem="yyb-es-Bj5" secondAttribute="bottom" constant="50" id="1so-wm-pmR"/>
+                            <constraint firstItem="yyb-es-Bj5" firstAttribute="leading" secondItem="MsI-Zm-KMt" secondAttribute="leading" id="Ib6-e7-1pS"/>
+                            <constraint firstItem="8VW-IR-cr7" firstAttribute="leading" secondItem="MsI-Zm-KMt" secondAttribute="leading" constant="20" id="TSS-cA-T3d"/>
+                            <constraint firstItem="MsI-Zm-KMt" firstAttribute="trailing" secondItem="8VW-IR-cr7" secondAttribute="trailing" constant="20" id="eSz-tE-SbB"/>
+                            <constraint firstItem="yyb-es-Bj5" firstAttribute="centerX" secondItem="8VW-IR-cr7" secondAttribute="centerX" id="mHz-gd-MTp"/>
+                            <constraint firstItem="MsI-Zm-KMt" firstAttribute="bottom" secondItem="8VW-IR-cr7" secondAttribute="bottom" constant="20" id="srL-eE-061"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ON6-tD-7ES"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DmQ-4K-FT0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155.07246376811597" y="-233.03571428571428"/>
+        </scene>
         <!--Interview Question Journal Table View Controller-->
         <scene sceneID="AED-8d-e9m">
             <objects>
                 <tableViewController storyboardIdentifier="InterviewQuestionsJournalTableViewController" id="asi-5i-mpk" customClass="InterviewQuestionJournalTableViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ieL-GV-ose">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <color key="tintColor" systemColor="systemTealColor"/>
                         <color key="separatorColor" systemColor="systemBackgroundColor"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="GoT-79-ErQ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" systemColor="systemTealColor"/>
+                            <items>
+                                <navigationItem id="eyg-0x-MXR">
+                                    <barButtonItem key="leftBarButtonItem" title="Back" id="3ZD-3L-x4t">
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="ddT-3e-18F">
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="R8v-ka-j7k" style="IBUITableViewCellStyleDefault" id="geK-Hr-xbj">
-                                <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="99.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="geK-Hr-xbj" id="4JQ-FT-s0Q">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -37,6 +117,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <segue destination="Xv4-xS-nvX" kind="show" id="TxF-zT-QuW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -127,7 +210,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="interviewJournalQuestionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOn-7w-J6b"/>
-                                                    <segue destination="asi-5i-mpk" kind="show" id="bUq-LD-HB1"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-SU-egx">
@@ -155,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1731.8840579710147" y="-233.03571428571428"/>
+            <point key="canvasLocation" x="1938" y="-233"/>
         </scene>
         <!--Text Response View Controller-->
         <scene sceneID="obT-eo-Rk9">

@@ -29,9 +29,9 @@ class MainDashboardViewController: UIViewController {
     
     @IBAction func interviewJournalQuestionTapped(_ sender: Any) {
         
-//        let journalTableVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InterviewQuestionsJournalTableViewController") as! InterviewQuestionJournalTableViewController
+        let journalTableVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InterviewQuestionsJournalTableViewController") as! InterviewQuestionJournalTableViewController
         
-//        navigationController?.pushViewController(journalTableVC, animated: true)
+        navigationController?.pushViewController(journalTableVC, animated: true)
         
     }
     //    UNWIND SEQUES

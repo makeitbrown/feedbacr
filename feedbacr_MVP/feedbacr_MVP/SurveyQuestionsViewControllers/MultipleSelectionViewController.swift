@@ -71,11 +71,6 @@ class MultipleSelectionViewController: UIViewController {
             
             answerIndex += 1
         }
-//        multiResponse1.setTitle("\(currentQuestion.responseAnswers[0].answerText)", for: .normal)
-//        multiResponse2.setTitle("\(currentQuestion.responseAnswers[1].answerText)", for: .normal)
-//        multiResponse3.setTitle("\(currentQuestion.responseAnswers[2].answerText)", for: .normal)
-//        multiResponse4.setTitle("\(currentQuestion.responseAnswers[3].answerText)", for: .normal)
-        //        if on last question update next label
         
     }
     
