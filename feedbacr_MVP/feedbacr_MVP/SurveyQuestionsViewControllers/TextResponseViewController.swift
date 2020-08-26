@@ -27,8 +27,8 @@ class TextResponseViewController: UIViewController {
     //    SUBMIT AND NEXT BUTTON
     @IBOutlet weak var nextAndSubmitButton: UIButton!
     @IBAction func NASButtonTapped(_ sender: Any) {
-        
-        nextQuestion()
+        SurveyHelper.presentNextQuestion(answer: textResponseTextView.text)
+//        nextQuestion()
     }
     
     //    MARK:- VARIABLES AND CONSTANTS

@@ -32,8 +32,8 @@ class MultipleSelectionViewController: UIViewController {
     //    SUBMIT AND NEXT BUTTON
     @IBOutlet weak var nextAndSubmitButton: UIButton!
     @IBAction func NASButtonTapped(_ sender: Any) {
-        
-        nextQuestion()
+        SurveyHelper.presentNextQuestion()
+//        nextQuestion()
     }
     
     override func viewDidLoad() {

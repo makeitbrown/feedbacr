@@ -23,3 +23,5 @@ var questions: [Question] = [
     Question(questionText: "What is the second thing that the interviewee could have done better?", type: .text, responseAnswers: [""]),
     Question(questionText: "On a scale of 1-5, how was the overall interview?", type: .multipleChoice, responseAnswers: ["1 - Terrible", "2", "3", "4", "5 - Excellent"])
 ]
+
+var interviewResults: [String : String] = ["":""]

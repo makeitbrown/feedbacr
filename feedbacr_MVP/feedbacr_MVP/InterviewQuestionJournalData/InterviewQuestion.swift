@@ -43,14 +43,14 @@ var UnansweredInterviewQuestions: [String : String] = [
     "Is There Anything Else You’d Like Us to Know?":"",
 ]
 
-var answeredInterviewQuestion: [String] = [
+var answeredInterviewQuestion: [String : String] = [
 
-    "What’s Your Dream Job?",
-    "What Makes You Unique?",
-    "What Should I Know That’s Not on Your Resume?",
-    "What Would Your First 30, 60, or 90 Days Look Like in This Role?",
-    "How Many Tennis Balls Can You Fit Into a Limousine?",
-    "If You Were an Animal, Which One Would You Want to Be?",
-    "Sell Me This Pen.",
-    "Is There Anything Else You’d Like Us to Know?",
+    "What’s Your Dream Job?":"TEST",
+    "What Makes You Unique?":"TEST",
+    "What Should I Know That’s Not on Your Resume?":"TEST",
+    "What Would Your First 30, 60, or 90 Days Look Like in This Role?":"TEST",
+    "How Many Tennis Balls Can You Fit Into a Limousine?":"TEST",
+    "If You Were an Animal, Which One Would You Want to Be?":"TEST",
+    "Sell Me This Pen.":"TEST",
+    "Is There Anything Else You’d Like Us to Know?":"TEST"
 ]

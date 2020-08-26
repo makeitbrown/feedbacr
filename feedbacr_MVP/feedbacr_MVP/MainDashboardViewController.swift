@@ -20,6 +20,10 @@ class MainDashboardViewController: UIViewController {
     //    ACTIONS
     
     @IBAction func tempSurveyButtonTapped(_ sender: Any) {
+        let textResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TextResponseViewController") as! TextResponseViewController
+       navController = UINavigationController(rootViewController:textResponseVC)
+        
+        Router.navigationController = navController
         present(navController!, animated: true, completion: nil)
         navController?.isNavigationBarHidden = true
     }
@@ -45,10 +49,7 @@ class MainDashboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let textResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TextResponseViewController") as! TextResponseViewController
-       navController = UINavigationController(rootViewController:textResponseVC)
     }
-    
     
 }
 

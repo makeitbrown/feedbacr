@@ -36,8 +36,8 @@ class MultipleChoiceViewController: UIViewController {
     //    SUBMIT AND NEXT BUTTON
     @IBOutlet weak var nextAndSubmitButton: UIButton!
     @IBAction func NASButtonTapped(_ sender: Any) {
-        
-        nextQuestion()
+        SurveyHelper.presentNextQuestion(answer: <#String#>)
+//        nextQuestion()
         
     }
     
@@ -97,10 +97,10 @@ class MultipleChoiceViewController: UIViewController {
         let surveyEndPageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SurveyEndPageViewController") as! SurveyEndPageViewController
         navigationController?.pushViewController(surveyEndPageVC, animated: true)
     }
-    
+
     func loadQuestion() {
         let currentQuestion = questions[Question.questionIndex]
-        
+
         switch currentQuestion.type {
         case .text:
             let textResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TextResponseViewController") as! TextResponseViewController

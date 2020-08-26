@@ -24,22 +24,35 @@ class InterviewQuestionJournalTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return answeredInterviewQuestion.count
+        if section == 0 {
+            return UnansweredInterviewQuestions.count
+        } else {
+            return answeredInterviewQuestion.count
+        }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JournalQuestionCell", for: indexPath)
 
+        if indexPath.section == 0 {
+            cell.detailTextLabel?.text = UnansweredInterviewQuestions.keys.description
+        } else {
+        cell.detailTextLabel?.text = answeredInterviewQuestion.keys.description
+        }
         // Configure the cell...
 
         return cell
     }
 
+//    MARK:- Unwind to TableView Seque
+    
+    @IBAction func unwindToJournalTVC(segue: UIStoryboardSegue) {
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
