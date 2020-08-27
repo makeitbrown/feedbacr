@@ -27,8 +27,8 @@ class MultipleChoiceViewController: UIViewController {
     @IBOutlet weak var singleResponse3: UIButton!
     @IBOutlet weak var singleResponse4: UIButton!
     @IBOutlet weak var singleResponse5: UIButton!
-    @IBAction func singleResponseButtonTapped(_ sender: Any) {
-        
+    @IBAction func singleResponseButtonTapped(_ sender: UIButton) {
+        selectedSingleResponse = sender.currentTitle
     }
     var isTheLastQuestion: Bool {
         return Question.questionIndex == questions.count - 1
@@ -36,10 +36,13 @@ class MultipleChoiceViewController: UIViewController {
     //    SUBMIT AND NEXT BUTTON
     @IBOutlet weak var nextAndSubmitButton: UIButton!
     @IBAction func NASButtonTapped(_ sender: Any) {
-        SurveyHelper.presentNextQuestion(answer: <#String#>)
+        guard let selectedSingleResponse = selectedSingleResponse else {return}
+        SurveyHelper.presentNextQuestion(answer: selectedSingleResponse)
 //        nextQuestion()
         
     }
+    
+    var selectedSingleResponse: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()

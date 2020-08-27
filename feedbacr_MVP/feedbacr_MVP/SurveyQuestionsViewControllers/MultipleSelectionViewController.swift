@@ -26,15 +26,19 @@ class MultipleSelectionViewController: UIViewController {
     @IBOutlet weak var multiResponse2: UIButton!
     @IBOutlet weak var multiResponse3: UIButton!
     @IBOutlet weak var multiResponse4: UIButton!
-    @IBAction func multiResponseButtonTapped(_ sender: Any) {
+    @IBAction func multiResponseButtonTapped(_ sender: UIButton) {
+        selectedMultiResponse = sender.currentTitle
     }
     
     //    SUBMIT AND NEXT BUTTON
     @IBOutlet weak var nextAndSubmitButton: UIButton!
     @IBAction func NASButtonTapped(_ sender: Any) {
-        SurveyHelper.presentNextQuestion()
+        guard let selectedResponse = selectedMultiResponse else {return}
+        SurveyHelper.presentNextQuestion(answer: selectedResponse)
 //        nextQuestion()
     }
+    
+    var selectedMultiResponse: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()

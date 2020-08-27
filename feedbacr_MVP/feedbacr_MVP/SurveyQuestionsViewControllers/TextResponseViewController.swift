@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextResponseViewController: UIViewController {
+class TextResponseViewController: UIViewController, UITextViewDelegate {
     
     //    MARK:- Outlets and Actions
     
@@ -38,6 +38,7 @@ class TextResponseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        self.textResponseTextView.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -71,6 +72,18 @@ class TextResponseViewController: UIViewController {
             navigationController?.pushViewController(multipleSelectionResponseVC, animated: true)
         }
     }
+    
+//    MARK:- TextViewDelegate
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+//    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+//        textResponseTextView.resignFirstResponder()
+//        return (true)
+//    }
+    
 /*
  // MARK: - Navigation
  

@@ -37,14 +37,16 @@ class InterviewQuestionJournalTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JournalQuestionCell", for: indexPath)
-
+       
+        var question: String
+        
         if indexPath.section == 0 {
-            cell.detailTextLabel?.text = UnansweredInterviewQuestions.keys.description
+            question = UnansweredInterviewQuestions.keys.sorted()[indexPath.row]
         } else {
-        cell.detailTextLabel?.text = answeredInterviewQuestion.keys.description
+            question = answeredInterviewQuestion.keys.sorted()[indexPath.row]
         }
         // Configure the cell...
-
+        cell.textLabel?.text = question
         return cell
     }
 
