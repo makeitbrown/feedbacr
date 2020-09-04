@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A2CF3BE24F1F1A400D35D0D /* InterviewQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF3BD24F1F1A400D35D0D /* InterviewQuestion.swift */; };
 		4A2CF3C024F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF3BF24F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift */; };
+		4A39CA1D24FFF67C00F7D03E /* MFMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA1C24FFF67C00F7D03E /* MFMail.swift */; };
 		4A58B38524CF3C10008038A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38424CF3C10008038A2 /* AppDelegate.swift */; };
 		4A58B38724CF3C10008038A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38624CF3C10008038A2 /* SceneDelegate.swift */; };
 		4A58B38924CF3C10008038A2 /* MainDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38824CF3C10008038A2 /* MainDashboardViewController.swift */; };
@@ -16,6 +17,9 @@
 		4A58B38E24CF3C12008038A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38D24CF3C12008038A2 /* Assets.xcassets */; };
 		4A58B39124CF3C12008038A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38F24CF3C12008038A2 /* LaunchScreen.storyboard */; };
 		4A58B39C24CF3C12008038A2 /* feedbacr_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B39B24CF3C12008038A2 /* feedbacr_MVPTests.swift */; };
+		4A88276524FD4667009B1D70 /* QJournalTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88276424FD4667009B1D70 /* QJournalTViewController.swift */; };
+		4A88276724FD46A8009B1D70 /* UnansweredTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88276624FD46A8009B1D70 /* UnansweredTableView.swift */; };
+		4A88276924FD46C4009B1D70 /* AnsweredTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88276824FD46C4009B1D70 /* AnsweredTableView.swift */; };
 		4A9DCB5A24D86C2D00042CFF /* SurveyQuestionsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCB5924D86C2D00042CFF /* SurveyQuestionsArray.swift */; };
 		4AA53D4C24F55A1400F01BA6 /* JournalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA53D4B24F55A1400F01BA6 /* JournalDetailViewController.swift */; };
 		4AA53D5024F561A500F01BA6 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA53D4F24F561A500F01BA6 /* QuestionData.swift */; };
@@ -38,6 +42,7 @@
 /* Begin PBXFileReference section */
 		4A2CF3BD24F1F1A400D35D0D /* InterviewQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestion.swift; sourceTree = "<group>"; };
 		4A2CF3BF24F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionJournalTableViewController.swift; sourceTree = "<group>"; };
+		4A39CA1C24FFF67C00F7D03E /* MFMail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFMail.swift; sourceTree = "<group>"; };
 		4A58B38124CF3C10008038A2 /* feedbacr_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feedbacr_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A58B38424CF3C10008038A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A58B38624CF3C10008038A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		4A58B39724CF3C12008038A2 /* feedbacr_MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = feedbacr_MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A58B39B24CF3C12008038A2 /* feedbacr_MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbacr_MVPTests.swift; sourceTree = "<group>"; };
 		4A58B39D24CF3C12008038A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A88276424FD4667009B1D70 /* QJournalTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QJournalTViewController.swift; sourceTree = "<group>"; };
+		4A88276624FD46A8009B1D70 /* UnansweredTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnansweredTableView.swift; sourceTree = "<group>"; };
+		4A88276824FD46C4009B1D70 /* AnsweredTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsweredTableView.swift; sourceTree = "<group>"; };
 		4A9DCB5924D86C2D00042CFF /* SurveyQuestionsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyQuestionsArray.swift; sourceTree = "<group>"; };
 		4AA53D4B24F55A1400F01BA6 /* JournalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalDetailViewController.swift; sourceTree = "<group>"; };
 		4AA53D4F24F561A500F01BA6 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
@@ -82,6 +90,9 @@
 				4A2CF3BD24F1F1A400D35D0D /* InterviewQuestion.swift */,
 				4A2CF3BF24F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift */,
 				4AA53D4B24F55A1400F01BA6 /* JournalDetailViewController.swift */,
+				4A88276424FD4667009B1D70 /* QJournalTViewController.swift */,
+				4A88276624FD46A8009B1D70 /* UnansweredTableView.swift */,
+				4A88276824FD46C4009B1D70 /* AnsweredTableView.swift */,
 			);
 			path = InterviewQuestionJournalData;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 			children = (
 				4A9DCB5924D86C2D00042CFF /* SurveyQuestionsArray.swift */,
 				4AA53D4F24F561A500F01BA6 /* QuestionData.swift */,
+				4A39CA1C24FFF67C00F7D03E /* MFMail.swift */,
 			);
 			name = QuestionDataFiles;
 			sourceTree = "<group>";
@@ -259,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A88276524FD4667009B1D70 /* QJournalTViewController.swift in Sources */,
 				4A58B38924CF3C10008038A2 /* MainDashboardViewController.swift in Sources */,
 				4AC8958124F0168700853811 /* MultipleSelectionViewController.swift in Sources */,
+				4A88276924FD46C4009B1D70 /* AnsweredTableView.swift in Sources */,
 				4A2CF3BE24F1F1A400D35D0D /* InterviewQuestion.swift in Sources */,
 				4A2CF3C024F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift in Sources */,
 				4A58B38524CF3C10008038A2 /* AppDelegate.swift in Sources */,
@@ -269,6 +283,8 @@
 				4AA53D5024F561A500F01BA6 /* QuestionData.swift in Sources */,
 				4AC8958524F01AD600853811 /* SurveyEndPageViewController.swift in Sources */,
 				4AC8957D24F0165A00853811 /* TextResponseViewController.swift in Sources */,
+				4A88276724FD46A8009B1D70 /* UnansweredTableView.swift in Sources */,
+				4A39CA1D24FFF67C00F7D03E /* MFMail.swift in Sources */,
 				4A58B38724CF3C10008038A2 /* SceneDelegate.swift in Sources */,
 				4A9DCB5A24D86C2D00042CFF /* SurveyQuestionsArray.swift in Sources */,
 			);

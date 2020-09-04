@@ -19,9 +19,9 @@ struct SurveyHelper {
     static var isLastQuestion: Bool {
         return Question.questionIndex == questions.count - 1
     }
-//    have the presentNextQuestion take in a peramitter of an answer for currentQuestion.
 //    create a saveAnswer func to save answer then go into if else statement.
     static func presentNextQuestion(answer: String) {
+        let currentQuestion = questions[Question.questionIndex]
         interviewResults[currentQuestion.questionText] = answer
         if isLastQuestion {
             Router.pushSurveyEndVC()

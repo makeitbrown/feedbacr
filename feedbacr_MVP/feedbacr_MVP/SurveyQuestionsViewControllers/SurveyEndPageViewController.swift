@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class SurveyEndPageViewController: UIViewController {
     
@@ -15,6 +16,14 @@ class SurveyEndPageViewController: UIViewController {
     @IBOutlet weak var instructionTextLabel: UILabel!
     
     @IBAction func sendResponsesButtonTapped(_ sender: Any) {
+        
+        let controller = ResultsMailViewController(recepients: ["brown.michael.n@gmail.com"], subject: "Test email", messageBody: interviewResults.description, messageBodyIsHTML: true)
+        if !MFMailComposeViewController.canSendMail() {
+            print("Mail services are not available")
+            return
+        } else {
+        self.present(controller, animated: true)
+        }
     }
     
     override func viewDidLoad() {

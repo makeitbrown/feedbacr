@@ -27,24 +27,29 @@ class MultipleSelectionViewController: UIViewController {
     @IBOutlet weak var multiResponse3: UIButton!
     @IBOutlet weak var multiResponse4: UIButton!
     @IBAction func multiResponseButtonTapped(_ sender: UIButton) {
-        selectedMultiResponse = sender.currentTitle
+        sender.isSelected = !sender.isSelected
+        if sender.isSelected == true {
+            selectedMultiResponse.append(sender.currentTitle!)
+        } else {
+            if let index = selectedMultiResponse.firstIndex(of: sender.currentTitle!) {
+                selectedMultiResponse.remove(at: index)
+            }
+        }
     }
     
     //    SUBMIT AND NEXT BUTTON
     @IBOutlet weak var nextAndSubmitButton: UIButton!
     @IBAction func NASButtonTapped(_ sender: Any) {
-        guard let selectedResponse = selectedMultiResponse else {return}
-        SurveyHelper.presentNextQuestion(answer: selectedResponse)
-//        nextQuestion()
+        guard selectedMultiResponse.count > 0 else {return}
+        SurveyHelper.presentNextQuestion(answer: selectedMultiResponse.joined(separator: ", "))
     }
     
-    var selectedMultiResponse: String?
+    var selectedMultiResponse: [String] = [String] ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hiddenButtons()
         updateUI()
-        // Do any additional setup after loading the view.
     }
     
     // MARK:- FUNCTIONS
@@ -55,7 +60,7 @@ class MultipleSelectionViewController: UIViewController {
         multiResponse2.isHidden = true
         multiResponse3.isHidden = true
         multiResponse4.isHidden = true
-       
+        
     }
     
     func updateUI() {
@@ -75,38 +80,5 @@ class MultipleSelectionViewController: UIViewController {
             
             answerIndex += 1
         }
-        
     }
-    
-    func nextQuestion() {
-        
-        Question.questionIndex += 1
-        loadQuestion()
-    }
-    
-    func loadQuestion() {
-        let currentQuestion = questions[Question.questionIndex]
-        
-        switch currentQuestion.type {
-        case .text:
-            let textResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TextResponseViewController") as! TextResponseViewController
-            navigationController?.pushViewController(textResponseVC, animated: true)
-        case .multipleChoice:
-            let multipleChoiceResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MultipleChoiceViewController") as! MultipleChoiceViewController
-            navigationController?.pushViewController(multipleChoiceResponseVC, animated: true)
-        case .multiSelection:
-            let multipleSelectionResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MultipleSelectionViewController") as! MultipleSelectionViewController
-            navigationController?.pushViewController(multipleSelectionResponseVC, animated: true)
-        }
-    }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

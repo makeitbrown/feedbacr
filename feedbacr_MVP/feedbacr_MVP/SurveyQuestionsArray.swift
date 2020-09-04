@@ -24,4 +24,17 @@ var questions: [Question] = [
     Question(questionText: "On a scale of 1-5, how was the overall interview?", type: .multipleChoice, responseAnswers: ["1 - Terrible", "2", "3", "4", "5 - Excellent"])
 ]
 
-var interviewResults: [String : String] = ["":""]
+var interviewResults: [String : String] = [
+    "What is your Company Name?": "",
+    "What is Your First Name?": "",
+    "How was the presentation of the resume?":"",
+    "Was the interviewee on time?":"",
+    "Did the interviewee answer the questions fully?":"",
+    "Did they ask appropriate questions?":"",
+    "Did the interviewee give thought provoking answers?":"",
+    "How was the demeanor/attitude of the interviewee during the interview?":"",
+    "How well did the interviewee maintain eye contact?":"",
+    "What is one thing that the interviewee could have done better at?":"",
+    "What is the second thing that the interviewee could have done better?":"",
+    "On a scale of 1-5, how was the overall interview?":""
+]
