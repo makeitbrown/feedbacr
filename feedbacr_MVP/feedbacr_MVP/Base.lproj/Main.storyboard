@@ -432,7 +432,7 @@
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A3J-SZ-pZo"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.36027872560000002" green="0.78126066920000004" blue="0.98042732480000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="rTv-sB-aLn" firstAttribute="top" secondItem="A3J-SZ-pZo" secondAttribute="top" constant="50" id="1Af-je-bK7"/>
                             <constraint firstItem="5CN-bD-obK" firstAttribute="leading" secondItem="A3J-SZ-pZo" secondAttribute="leading" constant="10" id="Czs-pf-yAR"/>

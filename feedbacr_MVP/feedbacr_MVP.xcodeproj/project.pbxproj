@@ -10,11 +10,27 @@
 		4A2CF3BE24F1F1A400D35D0D /* InterviewQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF3BD24F1F1A400D35D0D /* InterviewQuestion.swift */; };
 		4A2CF3C024F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2CF3BF24F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift */; };
 		4A39CA1D24FFF67C00F7D03E /* MFMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA1C24FFF67C00F7D03E /* MFMail.swift */; };
+		4A39CA2525028F7400F7D03E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA2425028F7400F7D03E /* AppDelegate.swift */; };
+		4A39CA2725028F7400F7D03E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA2625028F7400F7D03E /* SceneDelegate.swift */; };
+		4A39CA2925028F7400F7D03E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA2825028F7400F7D03E /* ViewController.swift */; };
+		4A39CA2C25028F7400F7D03E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A39CA2A25028F7400F7D03E /* Main.storyboard */; };
+		4A39CA3125028F7700F7D03E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A39CA2F25028F7700F7D03E /* LaunchScreen.storyboard */; };
+		4A39CA3D25028F7800F7D03E /* feedbacrAppClipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA3C25028F7800F7D03E /* feedbacrAppClipTests.swift */; };
+		4A39CA4825028F7800F7D03E /* feedbacrAppClipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA4725028F7800F7D03E /* feedbacrAppClipUITests.swift */; };
+		4A39CA4C25028F7800F7D03E /* feedbacrAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 4A39CA2225028F7400F7D03E /* feedbacrAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4A39CA5A250A74BB00F7D03E /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8957E24F0167100853811 /* MultipleChoiceViewController.swift */; };
+		4A39CA5B250A74BB00F7D03E /* MultipleSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8958024F0168700853811 /* MultipleSelectionViewController.swift */; };
+		4A39CA5C250A74BB00F7D03E /* SurveyEndPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8958424F01AD600853811 /* SurveyEndPageViewController.swift */; };
+		4A39CA5D250A74BB00F7D03E /* TextResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8957C24F0165A00853811 /* TextResponseViewController.swift */; };
+		4A39CA5E250A74C400F7D03E /* SurveyQuestionsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCB5924D86C2D00042CFF /* SurveyQuestionsArray.swift */; };
+		4A39CA5F250A74C400F7D03E /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA53D4F24F561A500F01BA6 /* QuestionData.swift */; };
+		4A39CA60250A74C400F7D03E /* MFMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA1C24FFF67C00F7D03E /* MFMail.swift */; };
+		4A39CA61250A768000F7D03E /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38D24CF3C12008038A2 /* SharedAssets.xcassets */; };
 		4A58B38524CF3C10008038A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38424CF3C10008038A2 /* AppDelegate.swift */; };
 		4A58B38724CF3C10008038A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38624CF3C10008038A2 /* SceneDelegate.swift */; };
 		4A58B38924CF3C10008038A2 /* MainDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B38824CF3C10008038A2 /* MainDashboardViewController.swift */; };
 		4A58B38C24CF3C10008038A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38A24CF3C10008038A2 /* Main.storyboard */; };
-		4A58B38E24CF3C12008038A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38D24CF3C12008038A2 /* Assets.xcassets */; };
+		4A58B38E24CF3C12008038A2 /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38D24CF3C12008038A2 /* SharedAssets.xcassets */; };
 		4A58B39124CF3C12008038A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38F24CF3C12008038A2 /* LaunchScreen.storyboard */; };
 		4A58B39C24CF3C12008038A2 /* feedbacr_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B39B24CF3C12008038A2 /* feedbacr_MVPTests.swift */; };
 		4A88276524FD4667009B1D70 /* QJournalTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88276424FD4667009B1D70 /* QJournalTViewController.swift */; };
@@ -30,6 +46,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4A39CA3925028F7800F7D03E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A58B37924CF3C10008038A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A39CA2125028F7400F7D03E;
+			remoteInfo = feedbacrAppClip;
+		};
+		4A39CA4425028F7800F7D03E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A58B37924CF3C10008038A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A39CA2125028F7400F7D03E;
+			remoteInfo = feedbacrAppClip;
+		};
+		4A39CA4A25028F7800F7D03E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A58B37924CF3C10008038A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A39CA2125028F7400F7D03E;
+			remoteInfo = feedbacrAppClip;
+		};
 		4A58B39824CF3C12008038A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A58B37924CF3C10008038A2 /* Project object */;
@@ -39,16 +76,45 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4A39CA5025028F7800F7D03E /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				4A39CA4C25028F7800F7D03E /* feedbacrAppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4A2CF3BD24F1F1A400D35D0D /* InterviewQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestion.swift; sourceTree = "<group>"; };
 		4A2CF3BF24F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionJournalTableViewController.swift; sourceTree = "<group>"; };
 		4A39CA1C24FFF67C00F7D03E /* MFMail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFMail.swift; sourceTree = "<group>"; };
+		4A39CA2225028F7400F7D03E /* feedbacrAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feedbacrAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A39CA2425028F7400F7D03E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A39CA2625028F7400F7D03E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A39CA2825028F7400F7D03E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A39CA2B25028F7400F7D03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A39CA2D25028F7700F7D03E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A39CA3025028F7700F7D03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A39CA3225028F7700F7D03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A39CA3325028F7700F7D03E /* feedbacrAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = feedbacrAppClip.entitlements; sourceTree = "<group>"; };
+		4A39CA3825028F7800F7D03E /* feedbacrAppClipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = feedbacrAppClipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A39CA3C25028F7800F7D03E /* feedbacrAppClipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbacrAppClipTests.swift; sourceTree = "<group>"; };
+		4A39CA3E25028F7800F7D03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A39CA4325028F7800F7D03E /* feedbacrAppClipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = feedbacrAppClipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A39CA4725028F7800F7D03E /* feedbacrAppClipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbacrAppClipUITests.swift; sourceTree = "<group>"; };
+		4A39CA4925028F7800F7D03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A58B38124CF3C10008038A2 /* feedbacr_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feedbacr_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A58B38424CF3C10008038A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A58B38624CF3C10008038A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4A58B38824CF3C10008038A2 /* MainDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardViewController.swift; sourceTree = "<group>"; };
 		4A58B38B24CF3C10008038A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4A58B38D24CF3C12008038A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A58B38D24CF3C12008038A2 /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
 		4A58B39024CF3C12008038A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A58B39224CF3C12008038A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A58B39724CF3C12008038A2 /* feedbacr_MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = feedbacr_MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +133,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4A39CA1F25028F7400F7D03E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A39CA3525028F7800F7D03E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A39CA4025028F7800F7D03E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A58B37E24CF3C10008038A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,6 +184,39 @@
 			path = InterviewQuestionJournalData;
 			sourceTree = "<group>";
 		};
+		4A39CA2325028F7400F7D03E /* feedbacrAppClip */ = {
+			isa = PBXGroup;
+			children = (
+				4A39CA2425028F7400F7D03E /* AppDelegate.swift */,
+				4A39CA2625028F7400F7D03E /* SceneDelegate.swift */,
+				4A39CA2825028F7400F7D03E /* ViewController.swift */,
+				4A39CA2A25028F7400F7D03E /* Main.storyboard */,
+				4A39CA2D25028F7700F7D03E /* Assets.xcassets */,
+				4A39CA2F25028F7700F7D03E /* LaunchScreen.storyboard */,
+				4A39CA3225028F7700F7D03E /* Info.plist */,
+				4A39CA3325028F7700F7D03E /* feedbacrAppClip.entitlements */,
+			);
+			path = feedbacrAppClip;
+			sourceTree = "<group>";
+		};
+		4A39CA3B25028F7800F7D03E /* feedbacrAppClipTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A39CA3C25028F7800F7D03E /* feedbacrAppClipTests.swift */,
+				4A39CA3E25028F7800F7D03E /* Info.plist */,
+			);
+			path = feedbacrAppClipTests;
+			sourceTree = "<group>";
+		};
+		4A39CA4625028F7800F7D03E /* feedbacrAppClipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A39CA4725028F7800F7D03E /* feedbacrAppClipUITests.swift */,
+				4A39CA4925028F7800F7D03E /* Info.plist */,
+			);
+			path = feedbacrAppClipUITests;
+			sourceTree = "<group>";
+		};
 		4A3F828C24F0071E00D62B80 /* SurveyQuestionsViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +233,9 @@
 			children = (
 				4A58B38324CF3C10008038A2 /* feedbacr_MVP */,
 				4A58B39A24CF3C12008038A2 /* feedbacr_MVPTests */,
+				4A39CA2325028F7400F7D03E /* feedbacrAppClip */,
+				4A39CA3B25028F7800F7D03E /* feedbacrAppClipTests */,
+				4A39CA4625028F7800F7D03E /* feedbacrAppClipUITests */,
 				4A58B38224CF3C10008038A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +245,9 @@
 			children = (
 				4A58B38124CF3C10008038A2 /* feedbacr_MVP.app */,
 				4A58B39724CF3C12008038A2 /* feedbacr_MVPTests.xctest */,
+				4A39CA2225028F7400F7D03E /* feedbacrAppClip.app */,
+				4A39CA3825028F7800F7D03E /* feedbacrAppClipTests.xctest */,
+				4A39CA4325028F7800F7D03E /* feedbacrAppClipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +262,7 @@
 				4A2CF3BC24F1F12B00D35D0D /* InterviewQuestionJournalData */,
 				4AA53D4D24F55A8300F01BA6 /* QuestionDataFiles */,
 				4A58B38A24CF3C10008038A2 /* Main.storyboard */,
-				4A58B38D24CF3C12008038A2 /* Assets.xcassets */,
+				4A58B38D24CF3C12008038A2 /* SharedAssets.xcassets */,
 				4A58B38F24CF3C12008038A2 /* LaunchScreen.storyboard */,
 				4A58B39224CF3C12008038A2 /* Info.plist */,
 			);
@@ -173,6 +299,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4A39CA2125028F7400F7D03E /* feedbacrAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A39CA4D25028F7800F7D03E /* Build configuration list for PBXNativeTarget "feedbacrAppClip" */;
+			buildPhases = (
+				4A39CA1E25028F7400F7D03E /* Sources */,
+				4A39CA1F25028F7400F7D03E /* Frameworks */,
+				4A39CA2025028F7400F7D03E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = feedbacrAppClip;
+			productName = feedbacrAppClip;
+			productReference = 4A39CA2225028F7400F7D03E /* feedbacrAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		4A39CA3725028F7800F7D03E /* feedbacrAppClipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A39CA5125028F7800F7D03E /* Build configuration list for PBXNativeTarget "feedbacrAppClipTests" */;
+			buildPhases = (
+				4A39CA3425028F7800F7D03E /* Sources */,
+				4A39CA3525028F7800F7D03E /* Frameworks */,
+				4A39CA3625028F7800F7D03E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A39CA3A25028F7800F7D03E /* PBXTargetDependency */,
+			);
+			name = feedbacrAppClipTests;
+			productName = feedbacrAppClipTests;
+			productReference = 4A39CA3825028F7800F7D03E /* feedbacrAppClipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A39CA4225028F7800F7D03E /* feedbacrAppClipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A39CA5425028F7800F7D03E /* Build configuration list for PBXNativeTarget "feedbacrAppClipUITests" */;
+			buildPhases = (
+				4A39CA3F25028F7800F7D03E /* Sources */,
+				4A39CA4025028F7800F7D03E /* Frameworks */,
+				4A39CA4125028F7800F7D03E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A39CA4525028F7800F7D03E /* PBXTargetDependency */,
+			);
+			name = feedbacrAppClipUITests;
+			productName = feedbacrAppClipUITests;
+			productReference = 4A39CA4325028F7800F7D03E /* feedbacrAppClipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		4A58B38024CF3C10008038A2 /* feedbacr_MVP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A58B3A024CF3C12008038A2 /* Build configuration list for PBXNativeTarget "feedbacr_MVP" */;
@@ -180,10 +359,12 @@
 				4A58B37D24CF3C10008038A2 /* Sources */,
 				4A58B37E24CF3C10008038A2 /* Frameworks */,
 				4A58B37F24CF3C10008038A2 /* Resources */,
+				4A39CA5025028F7800F7D03E /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4A39CA4B25028F7800F7D03E /* PBXTargetDependency */,
 			);
 			name = feedbacr_MVP;
 			productName = feedbacr_MVP;
@@ -214,10 +395,21 @@
 		4A58B37924CF3C10008038A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Michael Brown";
 				TargetAttributes = {
+					4A39CA2125028F7400F7D03E = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					4A39CA3725028F7800F7D03E = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 4A39CA2125028F7400F7D03E;
+					};
+					4A39CA4225028F7800F7D03E = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 4A39CA2125028F7400F7D03E;
+					};
 					4A58B38024CF3C10008038A2 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -242,17 +434,44 @@
 			targets = (
 				4A58B38024CF3C10008038A2 /* feedbacr_MVP */,
 				4A58B39624CF3C12008038A2 /* feedbacr_MVPTests */,
+				4A39CA2125028F7400F7D03E /* feedbacrAppClip */,
+				4A39CA3725028F7800F7D03E /* feedbacrAppClipTests */,
+				4A39CA4225028F7800F7D03E /* feedbacrAppClipUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4A39CA2025028F7400F7D03E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A39CA3125028F7700F7D03E /* LaunchScreen.storyboard in Resources */,
+				4A39CA61250A768000F7D03E /* SharedAssets.xcassets in Resources */,
+				4A39CA2C25028F7400F7D03E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A39CA3625028F7800F7D03E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A39CA4125028F7800F7D03E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A58B37F24CF3C10008038A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4A58B39124CF3C12008038A2 /* LaunchScreen.storyboard in Resources */,
-				4A58B38E24CF3C12008038A2 /* Assets.xcassets in Resources */,
+				4A58B38E24CF3C12008038A2 /* SharedAssets.xcassets in Resources */,
 				4A58B38C24CF3C10008038A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +486,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4A39CA1E25028F7400F7D03E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A39CA5F250A74C400F7D03E /* QuestionData.swift in Sources */,
+				4A39CA2925028F7400F7D03E /* ViewController.swift in Sources */,
+				4A39CA5D250A74BB00F7D03E /* TextResponseViewController.swift in Sources */,
+				4A39CA2525028F7400F7D03E /* AppDelegate.swift in Sources */,
+				4A39CA5B250A74BB00F7D03E /* MultipleSelectionViewController.swift in Sources */,
+				4A39CA60250A74C400F7D03E /* MFMail.swift in Sources */,
+				4A39CA2725028F7400F7D03E /* SceneDelegate.swift in Sources */,
+				4A39CA5E250A74C400F7D03E /* SurveyQuestionsArray.swift in Sources */,
+				4A39CA5A250A74BB00F7D03E /* MultipleChoiceViewController.swift in Sources */,
+				4A39CA5C250A74BB00F7D03E /* SurveyEndPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A39CA3425028F7800F7D03E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A39CA3D25028F7800F7D03E /* feedbacrAppClipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A39CA3F25028F7800F7D03E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A39CA4825028F7800F7D03E /* feedbacrAppClipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A58B37D24CF3C10008038A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,6 +553,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4A39CA3A25028F7800F7D03E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A39CA2125028F7400F7D03E /* feedbacrAppClip */;
+			targetProxy = 4A39CA3925028F7800F7D03E /* PBXContainerItemProxy */;
+		};
+		4A39CA4525028F7800F7D03E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A39CA2125028F7400F7D03E /* feedbacrAppClip */;
+			targetProxy = 4A39CA4425028F7800F7D03E /* PBXContainerItemProxy */;
+		};
+		4A39CA4B25028F7800F7D03E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A39CA2125028F7400F7D03E /* feedbacrAppClip */;
+			targetProxy = 4A39CA4A25028F7800F7D03E /* PBXContainerItemProxy */;
+		};
 		4A58B39924CF3C12008038A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4A58B38024CF3C10008038A2 /* feedbacr_MVP */;
@@ -309,6 +576,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4A39CA2A25028F7400F7D03E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A39CA2B25028F7400F7D03E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A39CA2F25028F7700F7D03E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A39CA3025028F7700F7D03E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		4A58B38A24CF3C10008038A2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -328,6 +611,136 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4A39CA4E25028F7800F7D03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = feedbacrAppClip/feedbacrAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = US39QDHZR6;
+				INFOPLIST_FILE = feedbacrAppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MichaelBrown.feedbacr-MVP.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG APPCLIP";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A39CA4F25028F7800F7D03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = feedbacrAppClip/feedbacrAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = US39QDHZR6;
+				INFOPLIST_FILE = feedbacrAppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MichaelBrown.feedbacr-MVP.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APPCLIP;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A39CA5225028F7800F7D03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = US39QDHZR6;
+				INFOPLIST_FILE = feedbacrAppClipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MichaelBrown.feedbacr-MVP.feedbacrAppClipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/feedbacrAppClip.app/feedbacrAppClip";
+			};
+			name = Debug;
+		};
+		4A39CA5325028F7800F7D03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = US39QDHZR6;
+				INFOPLIST_FILE = feedbacrAppClipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MichaelBrown.feedbacr-MVP.feedbacrAppClipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/feedbacrAppClip.app/feedbacrAppClip";
+			};
+			name = Release;
+		};
+		4A39CA5525028F7800F7D03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = US39QDHZR6;
+				INFOPLIST_FILE = feedbacrAppClipUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MichaelBrown.feedbacr-MVP.feedbacrAppClipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = feedbacrAppClip;
+			};
+			name = Debug;
+		};
+		4A39CA5625028F7800F7D03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = US39QDHZR6;
+				INFOPLIST_FILE = feedbacrAppClipUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MichaelBrown.feedbacr-MVP.feedbacrAppClipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = feedbacrAppClip;
+			};
+			name = Release;
+		};
 		4A58B39E24CF3C12008038A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -447,6 +860,7 @@
 		4A58B3A124CF3C12008038A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = US39QDHZR6;
@@ -465,6 +879,7 @@
 		4A58B3A224CF3C12008038A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = US39QDHZR6;
@@ -527,6 +942,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4A39CA4D25028F7800F7D03E /* Build configuration list for PBXNativeTarget "feedbacrAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A39CA4E25028F7800F7D03E /* Debug */,
+				4A39CA4F25028F7800F7D03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A39CA5125028F7800F7D03E /* Build configuration list for PBXNativeTarget "feedbacrAppClipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A39CA5225028F7800F7D03E /* Debug */,
+				4A39CA5325028F7800F7D03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A39CA5425028F7800F7D03E /* Build configuration list for PBXNativeTarget "feedbacrAppClipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A39CA5525028F7800F7D03E /* Debug */,
+				4A39CA5625028F7800F7D03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4A58B37C24CF3C10008038A2 /* Build configuration list for PBXProject "feedbacr_MVP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

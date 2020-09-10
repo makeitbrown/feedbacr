@@ -74,7 +74,7 @@ class MultipleChoiceViewController: UIViewController {
         
         questionsLabel.text = currentQuestion.questionText
         print(currentQuestion.questionText)
-        var answerButtons = [singleResponse1, singleResponse2, singleResponse3, singleResponse4, singleResponse5]
+        let answerButtons = [singleResponse1, singleResponse2, singleResponse3, singleResponse4, singleResponse5]
         var answerIndex = 0
         for answer in currentAnswers {
             
