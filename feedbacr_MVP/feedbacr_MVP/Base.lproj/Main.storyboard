@@ -12,7 +12,7 @@
         <!--Journal Detail View Controller-->
         <scene sceneID="3We-nZ-d3r">
             <objects>
-                <viewController storyboardIdentifier="JournalDetailViewController" id="Xv4-xS-nvX" customClass="JournalDetailViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JournalDetailViewController" id="Xv4-xS-nvX" customClass="JournalDetailViewController" customModule="feedbacrAppClip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H50-TT-z98">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,7 @@
         <!--JournalT View Controller-->
         <scene sceneID="JGv-Dy-pUt">
             <objects>
-                <viewController storyboardIdentifier="QJournalTViewController" id="0Gs-T3-Iyt" customClass="QJournalTViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QJournalTViewController" id="0Gs-T3-Iyt" customClass="QJournalTViewController" customModule="feedbacrAppClip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CZi-QF-rkK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,7 +125,7 @@
                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="86L-JM-Cev" customClass="UnansweredTableView" customModule="feedbacr_MVP" customModuleProvider="target">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="86L-JM-Cev" customClass="UnansweredTableView" customModule="feedbacrAppClip" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28.5" width="374" height="326"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
@@ -162,7 +162,7 @@
                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hwK-Bm-t7A" customClass="AnsweredTableView" customModule="feedbacr_MVP" customModuleProvider="target">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hwK-Bm-t7A" customClass="AnsweredTableView" customModule="feedbacrAppClip" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28.5" width="374" height="326"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
@@ -219,7 +219,7 @@
         <!--Interview Question Journal Table View Controller-->
         <scene sceneID="AED-8d-e9m">
             <objects>
-                <tableViewController storyboardIdentifier="InterviewQuestionsJournalTableViewController" id="asi-5i-mpk" customClass="InterviewQuestionJournalTableViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="InterviewQuestionsJournalTableViewController" id="asi-5i-mpk" customClass="InterviewQuestionJournalTableViewController" customModule="feedbacrAppClip" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ieL-GV-ose">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,10 +282,18 @@
             </objects>
             <point key="canvasLocation" x="852" y="254"/>
         </scene>
+        <!--AppClipMain-->
+        <scene sceneID="XYm-PO-bd8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AppClipMain" id="GJy-Rd-oyE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Km4-u7-bEr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2792" y="-735"/>
+        </scene>
         <!--Main Dashboard View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainDashboardViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainDashboardViewController" customModule="feedbacrAppClip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,7 +304,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="89Q-pc-1Z4">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="583.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fedbacr_logo" translatesAutoresizingMaskIntoConstraints="NO" id="RUT-MX-IKg">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feedbacr_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="RUT-MX-IKg">
                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="472.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="394" id="1aM-GO-Fzq"/>
@@ -309,6 +317,7 @@
                                                 <state key="normal" title="Feedbacr Survey"/>
                                                 <connections>
                                                     <action selector="tempSurveyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVa-eN-nq8"/>
+                                                    <segue destination="GJy-Rd-oyE" kind="presentation" id="nMJ-6v-tS0"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="IId-br-cTM">
@@ -380,7 +389,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="fot-zN-QBg"/>
                     <connections>
-                        <outlet property="QRImageView" destination="RUT-MX-IKg" id="g3o-eR-PvE"/>
                         <outlet property="emailButtonOutlet" destination="xun-WK-KOi" id="pQs-OH-OrC"/>
                         <outlet property="textButtonOutlet" destination="qZP-GJ-Lll" id="n3A-Al-Ra0"/>
                     </connections>
@@ -389,81 +397,10 @@
             </objects>
             <point key="canvasLocation" x="2847.826086956522" y="-233.03571428571428"/>
         </scene>
-        <!--Text Response View Controller-->
-        <scene sceneID="obT-eo-Rk9">
-            <objects>
-                <viewController storyboardIdentifier="TextResponseViewController" id="ydW-TL-CED" customClass="TextResponseViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zJY-kc-kC2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akD-Vj-oob">
-                                <rect key="frame" x="10" y="257" width="394" height="23"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback survey for Interview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTv-sB-aLn">
-                                <rect key="frame" x="32" y="94" width="350" height="28"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
-                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cr6-ET-njE">
-                                <rect key="frame" x="275" y="777" width="79" height="35"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" systemColor="systemTealColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="NASButtonTapped:" destination="ydW-TL-CED" eventType="touchUpInside" id="zNr-c3-nVa"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5CN-bD-obK">
-                                <rect key="frame" x="10" y="432" width="394" height="130"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="xgT-dh-FGi"/>
-                                </constraints>
-                                <color key="textColor" systemColor="systemTealColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="A3J-SZ-pZo"/>
-                        <color key="backgroundColor" red="0.36027872560000002" green="0.78126066920000004" blue="0.98042732480000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="rTv-sB-aLn" firstAttribute="top" secondItem="A3J-SZ-pZo" secondAttribute="top" constant="50" id="1Af-je-bK7"/>
-                            <constraint firstItem="5CN-bD-obK" firstAttribute="leading" secondItem="A3J-SZ-pZo" secondAttribute="leading" constant="10" id="Czs-pf-yAR"/>
-                            <constraint firstItem="A3J-SZ-pZo" firstAttribute="trailing" secondItem="rTv-sB-aLn" secondAttribute="trailing" constant="32" id="Dqt-KW-8nA"/>
-                            <constraint firstItem="akD-Vj-oob" firstAttribute="leading" secondItem="A3J-SZ-pZo" secondAttribute="leading" constant="10" id="FEW-Z4-3mc"/>
-                            <constraint firstItem="cr6-ET-njE" firstAttribute="leading" secondItem="A3J-SZ-pZo" secondAttribute="leading" constant="275" id="GwN-ZK-WPO"/>
-                            <constraint firstItem="A3J-SZ-pZo" firstAttribute="bottom" secondItem="cr6-ET-njE" secondAttribute="bottom" constant="50" id="MwX-oZ-3VI"/>
-                            <constraint firstItem="akD-Vj-oob" firstAttribute="top" secondItem="rTv-sB-aLn" secondAttribute="bottom" constant="135" id="OkF-PS-ZBR"/>
-                            <constraint firstItem="rTv-sB-aLn" firstAttribute="leading" secondItem="A3J-SZ-pZo" secondAttribute="leading" constant="32" id="PHC-pH-mkE"/>
-                            <constraint firstItem="A3J-SZ-pZo" firstAttribute="trailing" secondItem="5CN-bD-obK" secondAttribute="trailing" constant="10" id="UTs-06-fF6"/>
-                            <constraint firstAttribute="trailing" secondItem="akD-Vj-oob" secondAttribute="trailing" constant="10" id="lIa-g6-scX"/>
-                            <constraint firstItem="cr6-ET-njE" firstAttribute="top" secondItem="5CN-bD-obK" secondAttribute="bottom" constant="215" id="q4Z-hg-fdB"/>
-                            <constraint firstItem="A3J-SZ-pZo" firstAttribute="trailing" secondItem="cr6-ET-njE" secondAttribute="trailing" constant="60" id="yiW-UG-cot"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="ubU-8k-Vr7"/>
-                    <connections>
-                        <outlet property="mainSurveyLabel" destination="rTv-sB-aLn" id="RbB-SS-llO"/>
-                        <outlet property="nextAndSubmitButton" destination="cr6-ET-njE" id="uQd-t6-m1g"/>
-                        <outlet property="questionsLabel" destination="akD-Vj-oob" id="B2E-q1-SY6"/>
-                        <outlet property="textResponseTextView" destination="5CN-bD-obK" id="2dS-v6-ILS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mza-jh-qzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2929" y="-933"/>
-        </scene>
         <!--Multiple Choice View Controller-->
         <scene sceneID="5fk-ck-sPK">
             <objects>
-                <viewController storyboardIdentifier="MultipleChoiceViewController" id="VJz-fG-5bi" customClass="MultipleChoiceViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MultipleChoiceViewController" id="VJz-fG-5bi" customClass="MultipleChoiceViewController" customModule="feedbacrAppClip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eOY-qQ-2FH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -595,7 +532,7 @@
         <!--Multiple Selection View Controller-->
         <scene sceneID="qgc-hZ-wug">
             <objects>
-                <viewController storyboardIdentifier="MultipleSelectionViewController" id="Ahm-fJ-0Uk" customClass="MultipleSelectionViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MultipleSelectionViewController" id="Ahm-fJ-0Uk" customClass="MultipleSelectionViewController" customModule="feedbacrAppClip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SOL-R3-FCT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -713,7 +650,7 @@
         <!--Survey End Page View Controller-->
         <scene sceneID="58i-lr-XpO">
             <objects>
-                <viewController storyboardIdentifier="SurveyEndPageViewController" id="QnO-fj-cjR" customClass="SurveyEndPageViewController" customModule="feedbacr_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SurveyEndPageViewController" id="QnO-fj-cjR" customClass="SurveyEndPageViewController" customModule="feedbacrAppClip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EpU-aF-JuP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -800,6 +737,7 @@
         <segue reference="RNN-mO-fW6"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Feedbacr_logo_white" width="1495" height="1239"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="fedbacr_logo" width="2189" height="2625"/>

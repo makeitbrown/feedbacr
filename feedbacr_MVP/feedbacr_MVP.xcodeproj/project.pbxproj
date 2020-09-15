@@ -13,7 +13,7 @@
 		4A39CA2525028F7400F7D03E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA2425028F7400F7D03E /* AppDelegate.swift */; };
 		4A39CA2725028F7400F7D03E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA2625028F7400F7D03E /* SceneDelegate.swift */; };
 		4A39CA2925028F7400F7D03E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA2825028F7400F7D03E /* ViewController.swift */; };
-		4A39CA2C25028F7400F7D03E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A39CA2A25028F7400F7D03E /* Main.storyboard */; };
+		4A39CA2C25028F7400F7D03E /* AppClipMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A39CA2A25028F7400F7D03E /* AppClipMain.storyboard */; };
 		4A39CA3125028F7700F7D03E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A39CA2F25028F7700F7D03E /* LaunchScreen.storyboard */; };
 		4A39CA3D25028F7800F7D03E /* feedbacrAppClipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA3C25028F7800F7D03E /* feedbacrAppClipTests.swift */; };
 		4A39CA4825028F7800F7D03E /* feedbacrAppClipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A39CA4725028F7800F7D03E /* feedbacrAppClipUITests.swift */; };
@@ -39,7 +39,6 @@
 		4A9DCB5A24D86C2D00042CFF /* SurveyQuestionsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DCB5924D86C2D00042CFF /* SurveyQuestionsArray.swift */; };
 		4AA53D4C24F55A1400F01BA6 /* JournalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA53D4B24F55A1400F01BA6 /* JournalDetailViewController.swift */; };
 		4AA53D5024F561A500F01BA6 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA53D4F24F561A500F01BA6 /* QuestionData.swift */; };
-		4AC8957D24F0165A00853811 /* TextResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8957C24F0165A00853811 /* TextResponseViewController.swift */; };
 		4AC8957F24F0167100853811 /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8957E24F0167100853811 /* MultipleChoiceViewController.swift */; };
 		4AC8958124F0168700853811 /* MultipleSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8958024F0168700853811 /* MultipleSelectionViewController.swift */; };
 		4AC8958524F01AD600853811 /* SurveyEndPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8958424F01AD600853811 /* SurveyEndPageViewController.swift */; };
@@ -98,7 +97,7 @@
 		4A39CA2425028F7400F7D03E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A39CA2625028F7400F7D03E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4A39CA2825028F7400F7D03E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A39CA2B25028F7400F7D03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A39CA2B25028F7400F7D03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AppClipMain.storyboard; sourceTree = "<group>"; };
 		4A39CA2D25028F7700F7D03E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A39CA3025028F7700F7D03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A39CA3225028F7700F7D03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -190,7 +189,7 @@
 				4A39CA2425028F7400F7D03E /* AppDelegate.swift */,
 				4A39CA2625028F7400F7D03E /* SceneDelegate.swift */,
 				4A39CA2825028F7400F7D03E /* ViewController.swift */,
-				4A39CA2A25028F7400F7D03E /* Main.storyboard */,
+				4A39CA2A25028F7400F7D03E /* AppClipMain.storyboard */,
 				4A39CA2D25028F7700F7D03E /* Assets.xcassets */,
 				4A39CA2F25028F7700F7D03E /* LaunchScreen.storyboard */,
 				4A39CA3225028F7700F7D03E /* Info.plist */,
@@ -448,7 +447,7 @@
 			files = (
 				4A39CA3125028F7700F7D03E /* LaunchScreen.storyboard in Resources */,
 				4A39CA61250A768000F7D03E /* SharedAssets.xcassets in Resources */,
-				4A39CA2C25028F7400F7D03E /* Main.storyboard in Resources */,
+				4A39CA2C25028F7400F7D03E /* AppClipMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +533,6 @@
 				4AA53D4C24F55A1400F01BA6 /* JournalDetailViewController.swift in Sources */,
 				4AA53D5024F561A500F01BA6 /* QuestionData.swift in Sources */,
 				4AC8958524F01AD600853811 /* SurveyEndPageViewController.swift in Sources */,
-				4AC8957D24F0165A00853811 /* TextResponseViewController.swift in Sources */,
 				4A88276724FD46A8009B1D70 /* UnansweredTableView.swift in Sources */,
 				4A39CA1D24FFF67C00F7D03E /* MFMail.swift in Sources */,
 				4A58B38724CF3C10008038A2 /* SceneDelegate.swift in Sources */,
@@ -576,12 +574,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4A39CA2A25028F7400F7D03E /* Main.storyboard */ = {
+		4A39CA2A25028F7400F7D03E /* AppClipMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4A39CA2B25028F7400F7D03E /* Base */,
 			);
-			name = Main.storyboard;
+			name = AppClipMain.storyboard;
 			sourceTree = "<group>";
 		};
 		4A39CA2F25028F7700F7D03E /* LaunchScreen.storyboard */ = {

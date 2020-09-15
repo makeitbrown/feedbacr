@@ -13,19 +13,19 @@ class MainDashboardViewController: UIViewController {
     //    MARK: Outlets and Actions
     
     //    OUTLETS
-    @IBOutlet weak var QRImageView: UIImageView!
+//    @IBOutlet weak var QRImageView: UIImageView!
     @IBOutlet weak var emailButtonOutlet: UIButton!
     @IBOutlet weak var textButtonOutlet: UIButton!
     
     //    ACTIONS
     
     @IBAction func tempSurveyButtonTapped(_ sender: Any) {
-        let textResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TextResponseViewController") as! TextResponseViewController
-       navController = UINavigationController(rootViewController:textResponseVC)
-        
-        Router.navigationController = navController
-        present(navController!, animated: true, completion: nil)
-        navController?.isNavigationBarHidden = true
+//        let textResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TextResponseViewController") as! TextResponseViewController
+//       navController = UINavigationController(rootViewController:textResponseVC)
+//        
+//        Router.navigationController = navController
+//        present(navController!, animated: true, completion: nil)
+//        navController?.isNavigationBarHidden = true
     }
     @IBAction func emailButtonTapped(_ sender: Any) {
     }
