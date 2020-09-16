@@ -79,10 +79,336 @@
             </objects>
             <point key="canvasLocation" x="2929" y="-933"/>
         </scene>
+        <!--Multiple Choice View Controller-->
+        <scene sceneID="rGa-TG-uMg">
+            <objects>
+                <viewController storyboardIdentifier="MultipleChoiceViewController" id="Est-eN-ncF" customClass="MultipleChoiceViewController" customModule="feedbacrAppClip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJF-NU-YAM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B33-w3-VSL">
+                                <rect key="frame" x="10" y="257" width="394" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback survey for Interview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zr-31-FgL">
+                                <rect key="frame" x="32" y="94" width="350" height="28"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvR-dz-BXZ">
+                                <rect key="frame" x="275" y="777" width="79" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" systemColor="systemTealColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="NASButtonTapped:" destination="Est-eN-ncF" eventType="touchUpInside" id="56Q-TP-q8e"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="tzV-Rn-bSS" userLabel="multiChoiceStackView">
+                                <rect key="frame" x="30" y="380" width="354" height="238"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ki7-Jw-5Tq">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="22"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Response 1" image="circle" catalog="system">
+                                            <color key="titleColor" systemColor="systemTealColor"/>
+                                        </state>
+                                        <state key="selected" image="circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="singleResponseButtonTapped:" destination="Est-eN-ncF" eventType="touchUpInside" id="PV9-fV-iTI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlY-Ib-ruy">
+                                        <rect key="frame" x="0.0" y="54" width="354" height="22"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Response 2" image="circle" catalog="system">
+                                            <color key="titleColor" systemColor="systemTealColor"/>
+                                        </state>
+                                        <state key="selected" image="circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="singleResponseButtonTapped:" destination="Est-eN-ncF" eventType="touchUpInside" id="58v-fU-d1T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWC-Lp-2E3">
+                                        <rect key="frame" x="0.0" y="108" width="354" height="22"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Response 3" image="circle" catalog="system">
+                                            <color key="titleColor" systemColor="systemTealColor"/>
+                                        </state>
+                                        <state key="selected" image="circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="singleResponseButtonTapped:" destination="Est-eN-ncF" eventType="touchUpInside" id="HcF-8P-PEn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHs-eO-G7t">
+                                        <rect key="frame" x="0.0" y="162" width="354" height="22"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Response 4" image="circle" catalog="system">
+                                            <color key="titleColor" systemColor="systemTealColor"/>
+                                        </state>
+                                        <state key="selected" image="circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="singleResponseButtonTapped:" destination="Est-eN-ncF" eventType="touchUpInside" id="XCy-p7-HBa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIf-0x-lIa">
+                                        <rect key="frame" x="0.0" y="216" width="354" height="22"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Response 5" image="circle" catalog="system">
+                                            <color key="titleColor" systemColor="systemTealColor"/>
+                                        </state>
+                                        <state key="selected" image="circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="singleResponseButtonTapped:" destination="Est-eN-ncF" eventType="touchUpInside" id="Vs9-8S-6zO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hZy-MP-xlt"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="B33-w3-VSL" firstAttribute="leading" secondItem="hZy-MP-xlt" secondAttribute="leading" constant="10" id="0zM-tF-AZg"/>
+                            <constraint firstItem="hZy-MP-xlt" firstAttribute="trailing" secondItem="tzV-Rn-bSS" secondAttribute="trailing" constant="30" id="9ac-qd-dAX"/>
+                            <constraint firstItem="hZy-MP-xlt" firstAttribute="trailing" secondItem="3Zr-31-FgL" secondAttribute="trailing" constant="32" id="AnG-Qf-XFA"/>
+                            <constraint firstItem="hZy-MP-xlt" firstAttribute="trailing" secondItem="IvR-dz-BXZ" secondAttribute="trailing" constant="60" id="BQh-Un-gx9"/>
+                            <constraint firstItem="3Zr-31-FgL" firstAttribute="leading" secondItem="hZy-MP-xlt" secondAttribute="leading" constant="32" id="Cwz-R7-6s7"/>
+                            <constraint firstItem="hZy-MP-xlt" firstAttribute="bottom" secondItem="IvR-dz-BXZ" secondAttribute="bottom" constant="50" id="XKD-gn-oig"/>
+                            <constraint firstItem="IvR-dz-BXZ" firstAttribute="leading" secondItem="hZy-MP-xlt" secondAttribute="leading" constant="275" id="bhS-DE-Ivu"/>
+                            <constraint firstItem="hZy-MP-xlt" firstAttribute="trailing" secondItem="B33-w3-VSL" secondAttribute="trailing" constant="10" id="bxR-pT-d0o"/>
+                            <constraint firstItem="tzV-Rn-bSS" firstAttribute="leading" secondItem="hZy-MP-xlt" secondAttribute="leading" constant="30" id="cmx-Vd-1Za"/>
+                            <constraint firstItem="3Zr-31-FgL" firstAttribute="top" secondItem="hZy-MP-xlt" secondAttribute="top" constant="50" id="htC-Hl-ab4"/>
+                            <constraint firstItem="B33-w3-VSL" firstAttribute="top" secondItem="3Zr-31-FgL" secondAttribute="bottom" constant="135" id="mxB-3H-Rsr"/>
+                            <constraint firstItem="tzV-Rn-bSS" firstAttribute="top" secondItem="3Zr-31-FgL" secondAttribute="bottom" constant="258" id="udT-06-urp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sej-y2-InP"/>
+                    <connections>
+                        <outlet property="mainSurveyLabel" destination="3Zr-31-FgL" id="Mom-ui-4s5"/>
+                        <outlet property="nextAndSubmitButton" destination="IvR-dz-BXZ" id="H3A-WK-xZY"/>
+                        <outlet property="questionsLabel" destination="B33-w3-VSL" id="XGD-K3-gk1"/>
+                        <outlet property="singleResponse1" destination="Ki7-Jw-5Tq" id="tpd-M7-upv"/>
+                        <outlet property="singleResponse2" destination="LlY-Ib-ruy" id="mp8-cD-GMf"/>
+                        <outlet property="singleResponse3" destination="EWC-Lp-2E3" id="LTJ-eg-bFl"/>
+                        <outlet property="singleResponse4" destination="WHs-eO-G7t" id="Kgw-hi-k4V"/>
+                        <outlet property="singleResponse5" destination="sIf-0x-lIa" id="BgM-JI-pCe"/>
+                        <outlet property="singleResponseStackView" destination="tzV-Rn-bSS" id="ksZ-5R-vVX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Le-1g-ify" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2929" y="-233"/>
+        </scene>
+        <!--Multiple Selection View Controller-->
+        <scene sceneID="mig-PJ-7rX">
+            <objects>
+                <viewController storyboardIdentifier="MultipleSelectionViewController" id="ble-gK-cOR" customClass="MultipleSelectionViewController" customModule="feedbacrAppClip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jf5-g7-4nk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUy-dV-8Xh">
+                                <rect key="frame" x="10" y="257" width="394" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback survey for Interview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2I-vr-pGK">
+                                <rect key="frame" x="32" y="94" width="350" height="28"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpm-NH-VRf">
+                                <rect key="frame" x="275" y="777" width="79" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" systemColor="systemTealColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="NASButtonTapped:" destination="ble-gK-cOR" eventType="touchUpInside" id="7hY-tZ-uAv"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="D4n-Lg-KH1" userLabel="multiSelectionStackView">
+                                <rect key="frame" x="30" y="380" width="354" height="184"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtO-5j-Oud">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="22"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Response 1" image="square" catalog="system">
+                                            <color key="titleColor" systemColor="systemTealColor"/>
+                                        </state>
+                                        <state key="selected" image="square.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="multiResponseButtonTapped:" destination="ble-gK-cOR" eventType="touchUpInside" id="cDj-F6-ziX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bL-pH-JQ5">
+                                        <rect key="frame" x="0.0" y="54" width="354" height="22"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Response 2" image="square" catalog="system">
+                                            <color key="titleColor" systemColor="systemTealColor"/>
+                                        </state>
+                                        <state key="selected" image="square.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="multiResponseButtonTapped:" destination="ble-gK-cOR" eventType="touchUpInside" id="h7J-hB-kV6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZB-xv-31k">
+                                        <rect key="frame" x="0.0" y="108" width="354" height="22"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Response 3" image="square" catalog="system">
+                                            <color key="titleColor" systemColor="systemTealColor"/>
+                                        </state>
+                                        <state key="selected" image="square.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="multiResponseButtonTapped:" destination="ble-gK-cOR" eventType="touchUpInside" id="hH9-p2-67a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5z-QN-bxr">
+                                        <rect key="frame" x="0.0" y="162" width="354" height="22"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Response 4" image="square" catalog="system">
+                                            <color key="titleColor" systemColor="systemTealColor"/>
+                                        </state>
+                                        <state key="selected" image="square.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="multiResponseButtonTapped:" destination="ble-gK-cOR" eventType="touchUpInside" id="oMh-to-F5Z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NMz-4s-RgR"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="VUy-dV-8Xh" firstAttribute="top" secondItem="W2I-vr-pGK" secondAttribute="bottom" constant="135" id="1Pg-Xc-H66"/>
+                            <constraint firstItem="NMz-4s-RgR" firstAttribute="trailing" secondItem="W2I-vr-pGK" secondAttribute="trailing" constant="32" id="60y-4g-LCC"/>
+                            <constraint firstItem="NMz-4s-RgR" firstAttribute="trailing" secondItem="Xpm-NH-VRf" secondAttribute="trailing" constant="60" id="JTt-1Q-UYo"/>
+                            <constraint firstItem="NMz-4s-RgR" firstAttribute="trailing" secondItem="VUy-dV-8Xh" secondAttribute="trailing" constant="10" id="JVw-Vy-62I"/>
+                            <constraint firstItem="W2I-vr-pGK" firstAttribute="leading" secondItem="NMz-4s-RgR" secondAttribute="leading" constant="32" id="KtP-Uf-87s"/>
+                            <constraint firstItem="NMz-4s-RgR" firstAttribute="bottom" secondItem="Xpm-NH-VRf" secondAttribute="bottom" constant="50" id="QUk-a5-fgY"/>
+                            <constraint firstItem="NMz-4s-RgR" firstAttribute="trailing" secondItem="D4n-Lg-KH1" secondAttribute="trailing" constant="30" id="d5Z-dL-rl5"/>
+                            <constraint firstItem="Xpm-NH-VRf" firstAttribute="leading" secondItem="NMz-4s-RgR" secondAttribute="leading" constant="275" id="lag-bM-Bek"/>
+                            <constraint firstItem="W2I-vr-pGK" firstAttribute="top" secondItem="NMz-4s-RgR" secondAttribute="top" constant="50" id="lxz-b1-Muj"/>
+                            <constraint firstItem="VUy-dV-8Xh" firstAttribute="leading" secondItem="NMz-4s-RgR" secondAttribute="leading" constant="10" id="teh-Zn-wJN"/>
+                            <constraint firstItem="D4n-Lg-KH1" firstAttribute="leading" secondItem="NMz-4s-RgR" secondAttribute="leading" constant="30" id="xn9-Zr-CNV"/>
+                            <constraint firstItem="D4n-Lg-KH1" firstAttribute="top" secondItem="W2I-vr-pGK" secondAttribute="bottom" constant="258" id="z6U-J4-j2T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uCn-h0-PZR"/>
+                    <connections>
+                        <outlet property="mainSurveyLabel" destination="W2I-vr-pGK" id="m3u-9v-xWd"/>
+                        <outlet property="multiAnswerResponseStackView" destination="D4n-Lg-KH1" id="FVF-sQ-DKC"/>
+                        <outlet property="multiResponse1" destination="FtO-5j-Oud" id="BLW-hC-O4r"/>
+                        <outlet property="multiResponse2" destination="5bL-pH-JQ5" id="Jz6-aP-bvO"/>
+                        <outlet property="multiResponse3" destination="XZB-xv-31k" id="zPt-tA-Sxv"/>
+                        <outlet property="multiResponse4" destination="H5z-QN-bxr" id="4y5-mh-elZ"/>
+                        <outlet property="nextAndSubmitButton" destination="Xpm-NH-VRf" id="fP5-Km-oK9"/>
+                        <outlet property="questionsLabel" destination="VUy-dV-8Xh" id="7QN-5D-p2r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRC-bT-kpi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2929" y="441"/>
+        </scene>
+        <!--Survey End Page View Controller-->
+        <scene sceneID="AtS-Lk-9M3">
+            <objects>
+                <viewController storyboardIdentifier="SurveyEndPageViewController" id="hXy-OE-Pms" customClass="SurveyEndPageViewController" customModule="feedbacrAppClip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LGM-cS-8Mn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="HYw-GR-ZWr">
+                                <rect key="frame" x="10" y="49" width="394" height="713"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fedbacr_logo" translatesAutoresizingMaskIntoConstraints="NO" id="mxp-XA-Bsm">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="448"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your Feedback!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eO8-oM-Qlw">
+                                        <rect key="frame" x="0.0" y="473" width="394" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="SiG-1Z-viT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N96-Ed-YcS">
+                                        <rect key="frame" x="0.0" y="532" width="394" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="vnX-WT-SvS"/>
+                                        </constraints>
+                                        <string key="text">An email was sent to (interviewee name) with your feedback. If you would like a copy of the responses for your records, click the button below and you will recieve an email that you can save for your records.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZp-dV-4iF">
+                                        <rect key="frame" x="0.0" y="677" width="394" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Bpb-nP-l8N"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Send me the response">
+                                            <color key="titleColor" systemColor="systemTealColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendResponsesButtonTapped:" destination="hXy-OE-Pms" eventType="touchUpInside" id="gCa-tc-hwY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kaq-dj-cWl"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Kaq-dj-cWl" firstAttribute="bottom" secondItem="HYw-GR-ZWr" secondAttribute="bottom" constant="100" id="699-h0-l8q"/>
+                            <constraint firstItem="Kaq-dj-cWl" firstAttribute="trailing" secondItem="HYw-GR-ZWr" secondAttribute="trailing" constant="10" id="COq-We-UX9"/>
+                            <constraint firstItem="HYw-GR-ZWr" firstAttribute="leading" secondItem="Kaq-dj-cWl" secondAttribute="leading" constant="10" id="JlT-Rv-9ec"/>
+                            <constraint firstItem="HYw-GR-ZWr" firstAttribute="top" secondItem="Kaq-dj-cWl" secondAttribute="top" constant="5" id="lJJ-Np-nW6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4id-ar-Cis"/>
+                    <connections>
+                        <outlet property="instructionTextLabel" destination="N96-Ed-YcS" id="UbY-BE-FHf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LR-f8-6PO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5131.884057971015" y="-233.03571428571428"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="fedbacr_logo" width="2189" height="2625"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <image name="square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
