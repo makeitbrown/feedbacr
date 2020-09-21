@@ -36,6 +36,7 @@ class TextResponseViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         updateUI()
         self.textResponseTextView.delegate = self
+        Router.navigationController = self.navigationController
     }
     
     // MARK:- FUNCTIONS

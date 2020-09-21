@@ -41,26 +41,24 @@ struct Router {
     }
     
     static func pushNextQuestion() {
+        guard let navigationController = navigationController else {
+            fatalError("No navigationController")
+            return
+        }
         let currentQuestion = questions[Question.questionIndex]
         
         switch currentQuestion.type {
         case .text:
             let textResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TextResponseViewController") as! TextResponseViewController
-            navigationController?.pushViewController(textResponseVC, animated: true)
+            navigationController.pushViewController(textResponseVC, animated: true)
         case .multipleChoice:
             let multipleChoiceResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MultipleChoiceViewController") as! MultipleChoiceViewController
-            navigationController?.pushViewController(multipleChoiceResponseVC, animated: true)
+            navigationController.pushViewController(multipleChoiceResponseVC, animated: true)
         case .multiSelection:
             let multipleSelectionResponseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MultipleSelectionViewController") as! MultipleSelectionViewController
-            navigationController?.pushViewController(multipleSelectionResponseVC, animated: true)
+            navigationController.pushViewController(multipleSelectionResponseVC, animated: true)
         }
     }
-}
-
-func saveAnswer() {
-//    grab currentQuestion
-//    assign currentQuestion.question text and response to key and value
-//    interviewResults[currentQuestion.questionText] = answer
 }
 
 struct Question {
