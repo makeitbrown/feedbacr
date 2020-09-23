@@ -31,6 +31,7 @@
 		4A58B38E24CF3C12008038A2 /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38D24CF3C12008038A2 /* SharedAssets.xcassets */; };
 		4A58B39124CF3C12008038A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A58B38F24CF3C12008038A2 /* LaunchScreen.storyboard */; };
 		4A58B39C24CF3C12008038A2 /* feedbacr_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A58B39B24CF3C12008038A2 /* feedbacr_MVPTests.swift */; };
+		4A79E1AE251AE5550055F855 /* JournalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A79E1AD251AE5550055F855 /* JournalData.swift */; };
 		4A88276524FD4667009B1D70 /* QJournalTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88276424FD4667009B1D70 /* QJournalTViewController.swift */; };
 		4A88276724FD46A8009B1D70 /* UnansweredTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88276624FD46A8009B1D70 /* UnansweredTableView.swift */; };
 		4A88276924FD46C4009B1D70 /* AnsweredTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88276824FD46C4009B1D70 /* AnsweredTableView.swift */; };
@@ -113,6 +114,7 @@
 		4A58B39724CF3C12008038A2 /* feedbacr_MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = feedbacr_MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A58B39B24CF3C12008038A2 /* feedbacr_MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbacr_MVPTests.swift; sourceTree = "<group>"; };
 		4A58B39D24CF3C12008038A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A79E1AD251AE5550055F855 /* JournalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalData.swift; sourceTree = "<group>"; };
 		4A88276424FD4667009B1D70 /* QJournalTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QJournalTViewController.swift; sourceTree = "<group>"; };
 		4A88276624FD46A8009B1D70 /* UnansweredTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnansweredTableView.swift; sourceTree = "<group>"; };
 		4A88276824FD46C4009B1D70 /* AnsweredTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsweredTableView.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				4A88276424FD4667009B1D70 /* QJournalTViewController.swift */,
 				4A88276624FD46A8009B1D70 /* UnansweredTableView.swift */,
 				4A88276824FD46C4009B1D70 /* AnsweredTableView.swift */,
+				4A79E1AD251AE5550055F855 /* JournalData.swift */,
 			);
 			path = InterviewQuestionJournalData;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				4A2CF3C024F1F5F900D35D0D /* InterviewQuestionJournalTableViewController.swift in Sources */,
 				4A58B38524CF3C10008038A2 /* AppDelegate.swift in Sources */,
 				4AA53D4C24F55A1400F01BA6 /* JournalDetailViewController.swift in Sources */,
+				4A79E1AE251AE5550055F855 /* JournalData.swift in Sources */,
 				4A88276724FD46A8009B1D70 /* UnansweredTableView.swift in Sources */,
 				4A58B38724CF3C10008038A2 /* SceneDelegate.swift in Sources */,
 			);
