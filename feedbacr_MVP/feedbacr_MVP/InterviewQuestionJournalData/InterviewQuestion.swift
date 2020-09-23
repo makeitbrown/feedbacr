@@ -54,3 +54,6 @@ var answeredInterviewQuestion: [String : String] = [
     "Sell Me This Pen.":"TEST",
     "Is There Anything Else You’d Like Us to Know?":"TEST"
 ]
+
+//UITableViewDiffableDataSource - New
+//single dictionary with computed variable

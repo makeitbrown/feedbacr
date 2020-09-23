@@ -45,6 +45,9 @@ class TextResponseViewController: UIViewController, UITextViewDelegate {
         let currentQuestion = questions[Question.questionIndex]
         
         questionsLabel.text = currentQuestion.questionText
+        
+        textResponseTextView.layer.borderWidth = 2
+        textResponseTextView.layer.borderColor = UIColor.white.cgColor
     }
     
     //    MARK:- TextViewDelegate

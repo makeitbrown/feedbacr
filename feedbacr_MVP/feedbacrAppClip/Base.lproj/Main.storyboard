@@ -41,7 +41,6 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mFu-Sc-0M3">
                                 <rect key="frame" x="10" y="432" width="394" height="130"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.078232020547945202" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Ble-fF-nXp"/>
